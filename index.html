@@ -1,988 +1,1212 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Kid's Garden</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-		<!--====>> Favicon icon CSS <<====-->
-		<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	
-		<!--====>> Google fonts <<====-->
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700&display=swap" rel="stylesheet">
-	
-		<!--====>> Index CSS <<====-->
-		<link href="css/index.css" type="text/css" rel="stylesheet" />
-	</head>
-	<body>
-		<div class="preloader">
-			<div class="preloader-container">
-				<div class="preloader-item"></div>
-				<div class="preloader-item"></div>
-				<div class="preloader-item"></div>
-				<div class="preloader-item"></div>
-				<div class="preloader-item"></div>
+
+<head>
+	<title>Kid's Garden</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--====>> Favicon icon CSS <<====-->
+	<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!--====>> Google fonts <<====-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700&display=swap" rel="stylesheet">
+
+	<!--====>> Index CSS <<====-->
+	<link href="css/index.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="preloader">
+		<div class="preloader-container">
+			<div class="preloader-item"></div>
+			<div class="preloader-item"></div>
+			<div class="preloader-item"></div>
+			<div class="preloader-item"></div>
+			<div class="preloader-item"></div>
+		</div>
+	</div>
+	<!-- Begin quickLinks -->
+	<div class="quickLinks-wrap">
+		<div class="quickLinks-item" data-for-quick='1'>
+			<div class="quickLinks-head">
+				<img src="img/phone-white.svg" alt="img">
+				<p>Liên Hệ</p>
 			</div>
 		</div>
-		<!-- Begin quickLinks -->
-		<div class="quickLinks-wrap">
-			<div class="quickLinks-item" data-for-quick = '1'>
-				<div class="quickLinks-head">
-					<img src="img/phone-white.svg" alt="img">
-					<p>Liên Hệ</p>
+		<div class="quickLinks-item" data-for-quick='2'>
+			<div class="quickLinks-head">
+				<img src="img/calendar-white.svg" alt="img">
+				<p>Đặt Lịch Hẹn</p>
+			</div>
+		</div>
+		<div class="quickLinks-item" data-for-quick='3'>
+			<div class="quickLinks-head">
+				<img src="img/paper-white.svg" alt="img">
+				<p>Phụ Huynh</p>
+			</div>
+		</div>
+		<div class="quickLinks-item" data-for-quick='4'>
+			<div class="quickLinks-head">
+				<img src="img/map-marker-white.svg" alt="img">
+				<p>Vị Trí</p>
+			</div>
+		</div>
+
+		<div class="quickLinks-desc" data-to-quick='1'>
+			<div class="quickLinks-content">
+				<h4>Liên Hệ</h4>
+				<div class="contact-list">
+					<a href="#" target="_blank"><img src="img/lazy.png" class="lazy" data-src='img/map-marker-small.svg'
+							alt="marker"> Cơ sở 1: Số 401/31-33 Nguyễn Duy Trinh, TP Thủ Đức, TP HCM</a>
+					<a href="#" target="_blank"><img src="img/lazy.png" class="lazy" data-src='img/map-marker-small.svg'
+							alt="marker"> Cơ sở 2: Số 194-196 Song Hành, KĐT Lakeview city, P. An Phú, TP Thủ Đức, TP
+						HCM</a>
+					<a href="tel:+84962395330"><img src="img/lazy.png" class="lazy" data-src='img/call.svg' alt="call">
+						+84962395330</a>
+					<a href="mailto:kidsgarden.q2@gmail.com"><img src="img/lazy.png" class="lazy"
+							data-src='img/envelope.svg' alt="img">kidsgarden.q2@gmail.com</a>
 				</div>
 			</div>
-			<div class="quickLinks-item" data-for-quick = '2'>
-				<div class="quickLinks-head">
-					<img src="img/calendar-white.svg" alt="img">
-					<p>Đặt Lịch Hẹn</p>
+		</div>
+		<div class="quickLinks-desc" data-to-quick='2'>
+			<div class="quickLinks-content">
+				<h4>Đặt Lịch Hẹn</h4>
+				<form action="#" class="book-form" id="bookingForm">
+					<div class="successform">
+						<p>Cảm ơn ba mẹ đã gửi thông tin thành công!</p>
+					</div>
+					<div class="errorform">
+						<p>Có lỗi, vui lòng nhập lại thông tin.</p>
+					</div>
+					<input type="text" name="name" placeholder="Tên ba/mẹ">
+					<input type="text" name="kidName" placeholder="Tên của bé">
+					<div class="row">
+						<div class="col-lg-6">
+							<input type="email" name="email" placeholder="Địa chỉ email">
+						</div>
+						<div class="col-lg-6">
+							<input type="tel" name="phone" placeholder="Số điện thoại của ba/mẹ">
+						</div>
+					</div>
+					<div class="time-picker">
+						<img src="img/lazy.png" class="lazy" data-src="img/calendar.svg" alt="img">
+						<input type="text" name="date" class="choose-data datetimepicker" autocomplete="off"
+							placeholder="Ngày sinh của bé?" readonly>
+					</div>
+					<div class="time-picker">
+						<img src="img/lazy.png" class="lazy" data-src="img/calendar.svg" alt="img">
+						<input type="text" name="time" class="choose-data datetimepicker" autocomplete="off"
+							placeholder="Ngày dự kiến nhập học" readonly>
+					</div>
+					<button type="submit" class="button read-more mt-10">Gửi thông tin <svg
+							xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+							<path
+								d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z" />
+						</svg></button>
+				</form>
+			</div>
+		</div>
+		<div class="quickLinks-desc" data-to-quick='3'>
+			<div class="quickLinks-content">
+				<h4>Parent Resources</h4>
+				<div class="download-list">
+					<p>
+						<span>
+							<img src="img/lazy.png" class="lazy" data-src="img/handbook.svg" alt="img">
+							Parent Handbook (246 Kb)
+						</span>
+						<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg"
+								alt="img">download</a>
+					</p>
+					<p>
+						<span>
+							<img src="img/lazy.png" class="lazy" data-src="img/checklist.svg" alt="img">
+							Child Care Checklist (95 KB)
+						</span>
+						<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg"
+								alt="img">download</a>
+					</p>
+					<p>
+						<span>
+							<img src="img/lazy.png" class="lazy" data-src="img/paper-form.svg" alt="img">
+							Agreement Form (94 KB)
+						</span>
+						<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg"
+								alt="img">download</a>
+					</p>
+					<p>
+						<span>
+							<img src="img/lazy.png" class="lazy" data-src="img/billing.svg" alt="img">
+							Monthly Billing Chart (95 KB)
+						</span>
+						<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg"
+								alt="img">download</a>
+					</p>
 				</div>
 			</div>
-			<div class="quickLinks-item" data-for-quick = '3'>
-				<div class="quickLinks-head">
-					<img src="img/paper-white.svg" alt="img">
-					<p>Phụ Huynh</p>
-				</div>
-			</div>
-			<div class="quickLinks-item" data-for-quick = '4'>
-				<div class="quickLinks-head">
-					<img src="img/map-marker-white.svg" alt="img">
-					<p>Vị Trí</p>
-				</div>
-			</div>
-		
-			<div class="quickLinks-desc" data-to-quick = '1'>
-				<div class="quickLinks-content">
-					<h4>Liên Hệ</h4>
-					<div class="contact-list">
-						<a href="#" target="_blank"><img src="img/lazy.png" class="lazy" data-src='img/map-marker-small.svg' alt="marker"> Cơ sở 1: Số 401/31-33 Nguyễn Duy Trinh, TP Thủ Đức, TP HCM</a>
-						<a href="#" target="_blank"><img src="img/lazy.png" class="lazy" data-src='img/map-marker-small.svg' alt="marker"> Cơ sở 2: Số 194-196 Song Hành, KĐT Lakeview city, P. An Phú, TP Thủ Đức, TP HCM</a>
-						<a href="tel:+84962395330"><img src="img/lazy.png" class="lazy" data-src='img/call.svg' alt="call"> +84962395330</a>
-						<a href="mailto:kidsgarden.q2@gmail.com"><img src="img/lazy.png" class="lazy" data-src='img/envelope.svg' alt="img">kidsgarden.q2@gmail.com</a>
+		</div>
+
+		<div class="quickLinks-desc" data-to-quick='4'>
+			<div class="map-block" id="quick-map" data-lng='106.7773979,18.72z' data-lat='10.7951734' data-zoom='15'
+				data-map-icon="./img/map-marker.svg"></div>
+		</div>
+	</div>
+	<!-- End quickLinks -->
+	<!-- Begin header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="top-line">
+						<a href="index.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
+						<nav class="main-nav">
+							<ul class="main-nav-list">
+								<li>
+									<a href="index.html" class="active-link">Trang Chủ</a>
+								</li>
+								<li>
+									<a href="about-us.html">Giới Thiệu</a>
+								</li>
+								<li>
+									<a href="events.html">Sự Kiện <i class="fas fa-angle-down"></i></a>
+									<ul class="tt-dropdown-menu">
+										<li>
+											<a href="events.html">Sự Kiện </a>
+										</li>
+										<li><a href="single-event.html">Bài Viết</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="gallery-boxed.html">Thư Viện <i class="fas fa-angle-down"></i></a>
+								</li>
+								<li>
+									<a href="#">Tuyển Sinh <i class="fas fa-angle-down"></i></a>
+									<ul class="tt-dropdown-menu">
+										<!-- <li>
+												<a href="testimonials.html">Lời Chứng Thực</a>
+											</li> -->
+										<li>
+											<a href="csvc.html">Cơ Sở Vật Chất</a>
+										</li>
+										<li>
+											<a href="prices.html">Học Phí</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="contacts.html">Liên Hệ</a>
+								</li>
+							</ul>
+							<div class="close-nav">
+								<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M 10,10 L 30,30 M 30,10 L 10,30" fill="#3B4757" />
+								</svg>
+							</div>
+						</nav>
+						<div class="header-controls">
+							<div class="header-search">
+								<i class="fas fa-search"></i>
+								<form action="#" class="search-form">
+									<input type="search" class="search" name="search" placeholder="Search...">
+									<button type="submit"><i class="fas fa-search"></i></button>
+								</form>
+							</div>
+							<div class="hamburger">
+								<svg width="24" height="18" viewBox="0 0 24 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1.02857 2.31427H22.9714C23.5371 2.31427 24 1.85141 24 1.2857C24 0.719983 23.5371 0.257126 22.9714 0.257126H1.02857C0.462857 0.257126 0 0.719983 0 1.2857C0 1.85141 0.462857 2.31427 1.02857 2.31427Z"
+										fill="#3B4757" />
+									<path
+										d="M1.02857 10.0285H22.9714C23.5371 10.0285 24 9.56567 24 8.99996C24 8.43425 23.5371 7.97139 22.9714 7.97139H1.02857C0.462857 7.97139 0 8.43425 0 8.99996C0 9.56567 0.462857 10.0285 1.02857 10.0285Z"
+										fill="#3B4757" />
+									<path
+										d="M1.02857 17.7428H22.9714C23.5371 17.7428 24 17.28 24 16.7143C24 16.1485 23.5371 15.6857 22.9714 15.6857H1.02857C0.462857 15.6857 0 16.1485 0 16.7143C0 17.28 0.462857 17.7428 1.02857 17.7428Z"
+										fill="#3B4757" />
+								</svg>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="quickLinks-desc" data-to-quick = '2'>
-				<div class="quickLinks-content">
-					<h4>Đặt Lịch Hẹn</h4>
-					<form action="#" class="book-form" id="bookingForm">
-						<div class="successform">
-							<p>Cảm ơn ba mẹ đã gửi thông tin thành công!</p>
-						</div>
-						<div class="errorform">
-							<p>Có lỗi, vui lòng nhập lại thông tin.</p>
-						</div>
-						<input type="text" name="name" placeholder="Tên ba/mẹ">
-						<input type="text" name="kidName" placeholder="Tên của bé">
+		</div>
+		<div class="top-img">
+			<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="cloud">
+		</div>
+		<!-- <div class="bottom-img">
+				<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="cloud">
+			</div> -->
+	</header>
+	<!-- End header -->
+	<main class="main-container">
+		<!-- Begin main slier -->
+		<div class="main-slider-wrap white-dots">
+			<div class="main-slider" data-slick-speed="4000" data-slick-autoplay="true">
+				<div class="sl-card">
+					<div class="container">
 						<div class="row">
-							<div class="col-lg-6">
-								<input type="email" name="email" placeholder="Địa chỉ email">
+							<div class="col-12">
+								<div class="slide-content lazy" data-src="img/main-slider-rect.svg">
+									<img src="img/lazy.png" class="lazy" data-src="img/slider-ico.svg" alt="img">
+									<p class="content-text-cursive">Bạn đang tìm một ngôi trường</p>
+									<p class="content-head"><span>Vì</span><br>hạnh phúc của con?</p>
+								</div>
 							</div>
-							<div class="col-lg-6">
-								<input type="tel" name="phone" placeholder="Số điện thoại của ba/mẹ">
+						</div>
+					</div>
+					<picture>
+						<source type="image/webp" srcset="img/main-slider-1.webp">
+						<source type="image/jpeg" srcset="img/main-slider-1.jpg">
+						<img src="img/main-slider-1.jpg" class="slider-bg" alt="img">
+					</picture>
+				</div>
+				<div class="sl-card">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="slide-content lazy" data-src="img/main-slider-rect.svg">
+									<img src="img/lazy.png" class="lazy" data-src="img/slider-ico-2.svg" alt="img">
+									<p class="content-text-cursive">Nơi niềm vui sẽ đến!</p>
+									<p class="content-head"><span>Giáo dục từ tâm!</span><br>Kid's Garden!</p>
+								</div>
 							</div>
 						</div>
-						<div class="time-picker">
-							<img src="img/lazy.png" class="lazy" data-src="img/calendar.svg" alt="img">
-							<input type="text" name="date" class="choose-data datetimepicker" autocomplete="off" placeholder="Ngày sinh của bé?" readonly>
-						</div>
-						<div class="time-picker">
-							<img src="img/lazy.png" class="lazy" data-src="img/calendar.svg" alt="img">
-							<input type="text" name="time" class="choose-data datetimepicker" autocomplete="off" placeholder="Ngày dự kiến nhập học" readonly>
-						</div>
-						<button type="submit" class="button read-more mt-10">Gửi thông tin <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></button>
-					</form>
+					</div>
+					<picture>
+						<source type="image/webp" srcset="img/main-slider-2.webp">
+						<source type="image/jpeg" srcset="img/main-slider-2.jpg">
+						<img src="img/main-slider-2.jpg" class="slider-bg" alt="img">
+					</picture>
 				</div>
 			</div>
-			<div class="quickLinks-desc" data-to-quick = '3'>
-				<div class="quickLinks-content">
-					<h4>Parent Resources</h4>
-					<div class="download-list">
-						<p>
-							<span>
-								<img src="img/lazy.png" class="lazy" data-src="img/handbook.svg" alt="img">
-								Parent Handbook (246 Kb)
-							</span>
-							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
-						</p>
-						<p>
-							<span>
-								<img src="img/lazy.png" class="lazy" data-src="img/checklist.svg" alt="img">
-								Child Care Checklist (95 KB)
-							</span>
-							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
-						</p>
-						<p>
-							<span>
-								<img src="img/lazy.png" class="lazy" data-src="img/paper-form.svg" alt="img">
-								Agreement Form (94 KB)
-							</span>
-							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
-						</p>
-						<p>
-							<span>
-								<img src="img/lazy.png" class="lazy" data-src="img/billing.svg" alt="img">
-								Monthly Billing Chart (95 KB)
-							</span>
-							<a href="#"><img src="img/lazy.png" class="lazy" data-src="img/pdf-ico.svg" alt="img">download</a>
-						</p>
+		</div>
+		<!-- End main slier -->
+		<!-- Begin text-block -->
+		<section class="text-block pb-xs-30 pb-sm-50 pb-md-60 on-scroll">
+			<div class="container">
+				<div class="row align-items-sm-center align-items-lg-center">
+					<div class="col-md-6 on-scroll fade-left fade-scale">
+						<div class="svg-block">
+							<svg viewBox="0 0 526 502" fill="none" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
+								<mask id="img1" maskUnits="userSpaceOnUse" x="0" y="0" width="526" height="502">
+									<path
+										d="M51 8.49999C125.8 -21.9 276.833 39.8333 343 74.5C288.5 32.5 323 18.5 347 20.5C371 22.5 432.5 44.5 467.5 68C495.5 86.8 491.167 99.8333 485.5 104C489.333 108.333 499.7 121.5 510.5 139.5C524 162 532.5 183.5 517 210C504.6 231.2 446.833 231.833 421 229.5C419.667 229.5 422.4 233.9 444 251.5C471 273.5 495.5 299.5 493.5 330.5C491.9 355.3 436.833 363.833 409.5 365C410.5 368.5 409.8 376.9 399 382.5C388.2 388.1 355.833 387.5 341 386.5C364.167 399 410.3 428.9 409.5 448.5C408.5 473 386.5 492 344 488C301.5 484 238 444.5 250 452.5C262 460.5 280 481.5 271.5 492C263 502.5 236 504.5 216.5 496C197 487.5 81.5 440.5 67.5 397.5C53.5 354.5 83.5 367 81.5 359.5C79.5 352 53 346.5 25.5 293C3.50001 250.2 34.5 226.5 58 224.5C54.8333 224.5 40.3 217.8 23.5 191C6.7 164.2 25.8333 142.5 37.5 135C35.5 133.167 30.6 128.6 27 125C22.5 120.5 -42.5 46.5 51 8.49999Z"
+										fill="#C4C4C4" />
+								</mask>
+								<g mask="url(#img1)">
+									<rect y="-13" width="750" height="523" fill="url(#pattern0)" />
+								</g>
+								<defs>
+									<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#for-img1" transform="scale(0.00133333 0.00191205)" />
+									</pattern>
+									<image id="for-img1" width="750" height="523" xlink:href="img/svg-block-1.jpg">
+									</image>
+								</defs>
+							</svg>
+						</div>
+					</div>
+					<div class="col-md-6 on-scroll fade-up fade-scale pt-xs-35 pt-md-0">
+						<div class="block-header mb-xs-25 mb-md-25">
+							<p class="mb-xs-15 mb-lg-8">Nơi học tập và vui chơi cùng nhau</p>
+							<h2 class="mb-xs-25 mb-md-25"><span>Ngôi trường</span> dành cho giáo dục mầm non</h2>
+						</div>
+						<p class="mb-xs-20 mb-md-30">Chúng tôi cung cấp một môi trường sáng tạo, nuôi dưỡng và kích
+							thích, nơi trẻ em phát triển tính độc lập, sự tự tin và ý thức tích cực về bản thân và thế
+							giới xung quanh. Chương trình giảng dạy của chúng tôi được thiết kế để trẻ em tham gia vào
+							các trải nghiệm nâng cao ngôn ngữ, khả năng đọc viết, âm nhạc, chuyển động, nghệ thuật và xã
+							hội hóa. Thông qua trò chơi, tất cả các lĩnh vực phát triển đều được thúc đẩy.</p>
+						<a href="about-us.html" class="read-more">đọc thêm... <svg xmlns="http://www.w3.org/2000/svg"
+								width="9" height="9" viewBox="0 0 9 9" fill="none">
+								<path
+									d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z" />
+							</svg></a>
 					</div>
 				</div>
 			</div>
-			<div class="quickLinks-desc" data-to-quick = '4'>
-				<div class="map-block" id="quick-map" data-lng='10.7956815' data-lat='106.777134,19z' data-zoom='15' data-map-icon="./img/map-marker.svg"></div>
+		</section>
+		<!-- Begin text-block -->
+		<!-- Begin education-slier -->
+		<section
+			class="wave-block mb-xs-65 mb-md-60 mb-lg-120 pb-xs-130 pb-md-120 pb-lg-150 pt-xs-90 pt-md-120 pt-lg-180 lazy"
+			data-src="img/blue-wave.png">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-header on-scroll">
+							<p class="h-sub">Chúng tôi tận tâm chăm sóc và giáo dục</p>
+							<h2>Giáo dục tại Kid's Garden</h2>
+							<p>Chương trình giảng dạy độc quyền trường, kết hợp với công cụ lập kế hoạch bài học kỹ
+								thuật số, cho phép giáo viên tạo ra những trải nghiệm học tập được cá nhân hóa, phù hợp
+								với mọi lứa tuổi.</p>
+						</div>
+						<div class="education-slier on-scroll fade-up" data-show-count='3' data-show-count-md='2'
+							data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
+							<div class="it-card">
+								<div class="education-short">
+									<div class="education-top">
+										<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
+										<picture>
+											<source type="image/webp" srcset="img/educational-1.webp">
+											<source type="image/jpeg" srcset="img/educational-1.jpg">
+											<img src="img/educational-1.jpg" alt="img">
+										</picture>
+										<div class="hide-block">
+											<div class="inner-wrap">
+												<p>Trong những năm đầu đời, trẻ sơ sinh phát triển ý thức cơ bản về bản
+													thân và người khác, hình thành sự gắn bó và học cách nói những từ
+													đầu tiên - thời điểm quan trọng nhất cho sự phát triển.</p>
+												<div class="education-short-info">
+													<p><span>Sĩ số:</span> 10 - 15</p>
+													<p><span>Giáo viên:</span> 2 - 3</p>
+												</div>
+												<a href="programs.html" class="read-more">Đăng ký ghi danh <svg
+														xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+														viewBox="0 0 9 9" fill="none">
+														< <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+															viewBox="0 0 9 9" fill="none">
+															<path
+																d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z">
+															</path>
+													</svg>path d="M0.505883 5.20577L0.491834 5.2027L6.51423
+													5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745
+													7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559
+													8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501
+													8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949
+													4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949
+													4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508
+													0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559
+													0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745
+													1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559
+													3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123
+													-1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028
+													0.23464 5.20577 0.505883 5.20577Z"></path></svg></a>
+											</div>
+										</div>
+									</div>
+									<div class="education-bottom">
+										<p>Infants <span class="education-age">12-24</span> <span
+												class="old">Tháng</span></p>
+									</div>
+									<!-- educational-1 -->
+								</div>
+							</div>
+							<div class="it-card">
+								<div class="education-short color-2">
+									<div class="education-top">
+										<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
+										<picture>
+											<source type="image/webp" srcset="img/educational-2.webp">
+											<source type="image/jpeg" srcset="img/educational-2.jpg">
+											<img src="img/educational-2.jpg" alt="img">
+										</picture>
+										<div class="hide-block">
+											<div class="inner-wrap">
+												<p>Năng lượng. Sự phấn khích. Vận động. Đây là những phẩm chất xác định
+													một đứa trẻ mới biết đi và chúng được sử dụng trong chương trình này
+													để thúc đẩy những trải nghiệm học tập tích cực.</p>
+												<div class="education-short-info">
+													<p><span>Sĩ số:</span> 10 - 15</p>
+													<p><span>Giáo viên:</span> 2 - 3</p>
+												</div>
+												<a href="programs.html" class="read-more">Đăng ký ghi danh <svg
+														xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+														viewBox="0 0 9 9" fill="none">
+														<path
+															d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z">
+														</path>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+									<div class="education-bottom">
+										<p>Toddlers <span class="education-age">2-3</span> <span class="old">Tuổi</span>
+										</p>
+									</div>
+									<!-- educational-1 -->
+								</div>
+							</div>
+							<div class="it-card">
+								<div class="education-short color-3">
+									<div class="education-top">
+										<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
+										<picture>
+											<source type="image/webp" srcset="img/educational-3.webp">
+											<source type="image/jpeg" srcset="img/educational-3.jpg">
+											<img src="img/educational-3.jpg" alt="img">
+										</picture>
+										<div class="hide-block">
+											<div class="inner-wrap">
+												<p>Học sinh sẽ nhận được nền giáo dục truyền thống về khoa học, kỹ
+													thuật, nghệ thuật và toán học và sẽ được theo dõi về mặt học thuật
+													và xã hội thông qua các đánh giá liên tục.</p>
+												<div class="education-short-info">
+													<p><span>Sĩ số:</span> 10 - 15</p>
+													<p><span>Giáo viên:</span> 2 - 3</p>
+												</div>
+												<a href="programs.html" class="read-more">Đăng ký ghi danh <svg
+														xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+														viewBox="0 0 9 9" fill="none">
+														<path
+															d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z">
+														</path>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+									<div class="education-bottom">
+										<p>Preschool <span class="education-age">3-4</span> <span
+												class="old">Tuổi</span></p>
+									</div>
+									<!-- educational-1 -->
+								</div>
+							</div>
+							<div class="it-card">
+								<div class="education-short color-4">
+									<div class="education-top">
+										<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
+										<picture>
+											<source type="image/webp" srcset="img/educational-4.webp">
+											<source type="image/jpeg" srcset="img/educational-4.jpg">
+											<img src="img/educational-4.jpg" alt="img">
+										</picture>
+										<div class="hide-block">
+											<div class="inner-wrap">
+												<p>Chương trình này chuẩn bị cho con bạn những bài học về việc hình
+													thành và duy trì thái độ tích cực đối với việc học tập độc lập, cũng
+													như thành thạo các kỹ năng vận động thô và tinh.</p>
+												<div class="education-short-info">
+													<p><span>Sĩ số:</span> 10 - 15</p>
+													<p><span>Giáo viên:</span> 2 - 3</p>
+												</div>
+												<a href="programs.html" class="read-more">Đăng ký ghi danh <svg
+														xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+														viewBox="0 0 9 9" fill="none">
+														<path
+															d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z">
+														</path>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+									<div class="education-bottom">
+										<p>Pre-Kindergarten <span class="education-age">4-5</span> <span
+												class="old">Tuổi</span></p>
+									</div>
+									<!-- educational-1 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<!-- End quickLinks -->
-		<!-- Begin header -->
-		<header class="header">
+		</section>
+		<!-- End education-slier -->
+		<!-- Begin learning element -->
+		<section class="mb-xs-45 mb-md-90 mb-lg-120 learning-elements-section">
+			<div class="container">
+				<div class="row align-items-lg-center">
+					<div class="col-lg-6 on-scroll fade-left">
+						<div class="block-header">
+							<p class="mb-xs-15 mb-lg-8">Chúng tôi cung cấp các hoạt động chính</p>
+							<h2 class="mb-xs-25 mb-md-25"><span>Các yếu tố của việc học</span>. Cam kết đạt được sự xuất
+								sắc</h2>
+						</div>
+						<p class="mb-xs-15 mb-lg-8">Chương trình giảng dạy của chúng tôi dựa trên nghiên cứu và thiết kế
+							của các chuyên gia giáo dục nổi tiếng nhất và được tạo ra để hỗ trợ những năm đầu quan trọng
+							này, truyền cảm hứng cho trẻ em trở thành những nhà thám hiểm táo bạo ngày nay và những
+							người học vui vẻ, tự tin trong suốt cuộc đời.</p>
+						<p class="mb-xs-20 mb-md-37">Chúng tôi tin rằng trẻ em học tốt nhất thông qua trò chơi và được
+							truyền cảm hứng từ việc học tập dựa trên trẻ em. Chúng tôi có một số khu vực chơi khác nhau
+							trong mỗi nhóm của chúng tôi.</p>
+						<a href="#" class="read-more">Đọc thêm... <svg xmlns="http://www.w3.org/2000/svg" width="9"
+								height="9" viewBox="0 0 9 9" fill="none">
+								<path
+									d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z" />
+							</svg></a>
+					</div>
+					<div class="col-lg-6 on-scroll fade-up">
+						<div class="el-wr">
+							<div class="learning-elements-wrap">
+								<div class="circle-container">
+									<div class="learning-item" data-learn-tab='#0'>
+										<img src="img/gardering.svg" alt="img">
+										<p>Làm Vườn</p>
+									</div>
+									<div class="learning-item" data-learn-tab='#1'>
+										<img src="img/sport.svg" alt="img">
+										<p>Thể Thao</p>
+									</div>
+									<div class="learning-item" data-learn-tab='#2'>
+										<img src="img/art.svg" alt="img">
+										<p>Nghệ Thuật</p>
+									</div>
+									<div class="learning-item" data-learn-tab='#3'>
+										<img src="img/excursions.svg" alt="img">
+										<p>Dã ngoại</p>
+									</div>
+									<div class="learning-item" data-learn-tab='#4'>
+										<img src="img/outdoor.svg" alt="img">
+										<p>Hoạt động ngoài trời</p>
+									</div>
+									<div class="learning-item" data-learn-tab='#5'>
+										<img src="img/math.svg" alt="img">
+										<p>Toán Học</p>
+									</div>
+									<div class="learning-item" data-learn-tab='#6'>
+										<img src="img/literacy.svg" alt="img">
+										<p>Chữ Viết</p>
+									</div>
+								</div>
+								<div class="tab-element-content">
+									<div class="for-tab start">
+										<h3>Chương trình giảng dạy<br>Các yếu tố học thuật</h3>
+									</div>
+									<div class="for-tab" id="0">
+										<h3>Làm Vườn</h3>
+										<p class="mb-0">Nhóm trẻ mới biết đi và mẫu giáo có một khu vườn ngoài trời. Mỗi
+											mùa xuân, trẻ em và giáo viên đóng góp và tạo ra những khu vườn
+											container/giường nâng đẹp và mang tính giáo dục.</p>
+									</div>
+									<div class="for-tab" id="1">
+										<h3>Thể Thao</h3>
+										<p class="mb-0">Trẻ em cần phát triển các kỹ năng vận động lớn và vận động nhỏ
+											cũng như sức bền tim mạch. Hoạt động thể chất mở rộng cũng là cần thiết để
+											giải quyết vấn đề béo phì đang gia tăng ở trẻ em Việt Nam.</p>
+									</div>
+									<div class="for-tab" id="2">
+										<h3>Nghệ Thuật</h3>
+										<p class="mb-0">Trẻ em sẽ thích thiết kế và tạo ra những con rối và tranh ghép,
+											chế tạo nhạc cụ và bó hoa, cũng như vẽ, dán và làm đồ thủ công theo ý thích
+											của mình!</p>
+									</div>
+									<div class="for-tab" id="3">
+										<h3>Dã Ngoại</h3>
+										<p class="mb-0">Các chuyến tham quan là một phần thiết yếu trong quá trình giáo
+											dục sớm của trẻ. Chúng giúp trẻ tiếp xúc với nhiều trải nghiệm khác nhau và
+											giúp trẻ hiểu được thế giới mà mình đang sống.</p>
+									</div>
+									<div class="for-tab" id="4">
+										<h3>Hoạt động ngoài trời</h3>
+										<p class="mb-0">Con em chúng ta được hưởng lợi từ nhiều không gian vui chơi
+											ngoài trời. Ngoài sân chơi, trẻ còn được trải nghiệm những điều kỳ diệu của
+											thiên nhiên trong rừng, cánh đồng lớn, khu vườn nâng cao và những chuyến đi
+											dạo trong thiên nhiên.</p>
+									</div>
+									<div class="for-tab" id="5">
+										<h3>Toán Học</h3>
+										<p class="mb-0">Nên dạy chương trình toán mẫu giáo bằng các bài học mẫu giáo bao
+											gồm các hoạt động tương tác, trò chơi học tập, phiếu bài tập có thể in, đánh
+											giá và củng cố.</p>
+									</div>
+									<div class="for-tab" id="6">
+										<h3>Chữ Viết</h3>
+										<p class="mb-0">Một chương trình học đọc viết có hệ thống và tích hợp thúc đẩy
+											sự phát triển ngôn ngữ của trẻ mẫu giáo. Chương trình sử dụng phương pháp
+											hướng dẫn trực tiếp, có hệ thống dựa trên một loạt sách được biên soạn hàng
+											tuần trong lớp học.</p>
+									</div>
+								</div>
+								<div class="my-paroller" data-paroller-factor="0.3" data-paroller-type="foreground"
+									data-paroller-direction="vertical">
+									<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="img">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End learning element -->
+		<section class="video-section mb-xs-50 mb-md-75 mb-lg-120 lazy" data-src="img/wave-video.png">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-8 col-lg-6 on-scroll fade-up">
+						<h2 class="mb-xs-25 mb-md-25">Chúng tôi cung cấp môi trường phát triển <span
+								class="main-color-font dib"> cho trẻ</span></h2>
+						<p class="mb-xs-20 mb-md-37">Suy nghĩ mở dựa trên những trải nghiệm vui chơi, trẻ em phát triển
+							và yêu thích trường học của mình, tự hào khi được thuộc về một cộng đồng</p>
+						<a href="https://www.youtube.com/watch?v=NkfKechADow" class="video-btn"
+							data-toggle="lightbox"><span class="play-ico animate"><span><img src="img/lazy.png"
+										class="lazy" data-src='img/play.png' alt="img"></span></span> view video</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Begin advantage listing -->
+		<section class="mb-xs-60 mb-sm-70 mb-md-90 mb-lg-120">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<div class="top-line">
-							<a href="index.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
-							<nav class="main-nav">
-								<ul class="main-nav-list">
-									<li>
-										<a href="index.html" class="active-link">Trang Chủ</a>
-									</li>
-									<li>
-										<a href="about-us.html">Giới Thiệu</a>
-									</li>
-									<li>
-										<a href="events.html">Sự Kiện <i class="fas fa-angle-down"></i></a>
-										<ul class="tt-dropdown-menu">
-											<li>
-												<a href="events.html">Sự Kiện </a>
-											</li>
-											<li><a href="single-event.html">Bài Viết</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="gallery-boxed.html">Thư Viện <i class="fas fa-angle-down"></i></a>
-									</li>
-									<li>
-										<a href="#">Tuyển Sinh <i class="fas fa-angle-down"></i></a>
-										<ul class="tt-dropdown-menu">
-											<!-- <li>
-												<a href="testimonials.html">Lời Chứng Thực</a>
-											</li> -->
-											<li>
-												<a href="csvc.html">Cơ Sở Vật Chất</a>
-											</li>
-											<li>
-												<a href="prices.html">Học Phí</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="contacts.html">Liên Hệ</a>
-									</li>
+						<div class="section-header on-scroll">
+							<p class="h-sub">Đọc tiếp để hiểu sự khác biệt của chúng tôi</p>
+							<h2>Tại sao chọn Kid's Garden</h2>
+						</div>
+						<ol class="advantage-list pt-xs-0 pt-md-0 pt-lg-20">
+							<li class="on-scroll fade-up">
+								<div class="advantage-block">
+									<h5>Môi trường như ở Nhà</h5>
+									<p>Các con sẽ cảm thấy thoải mái và tự tin trong ngôi nhà của mình, cảm thấy an toàn
+										và an tâm để khám phá và học hỏi.</p>
+								</div>
+							</li>
+							<li class="on-scroll fade-up">
+								<div class="advantage-block">
+									<h5>Sự yêu thương</h5>
+									<p>Đón nhận sự yêu thương vô bờ bến từ các cô giáo có chuyên môn cao.</p>
+								</div>
+							</li>
+							<li class="on-scroll fade-up">
+								<div class="advantage-block">
+									<h5>Đảm bảo hoàn tiền trong 30 ngày</h5>
+									<p>Nếu ba mẹ không hoàn toàn hài lòng, chúng tôi sẽ hoàn lại tiền cho bạn mà không
+										cần hỏi lý do.</p>
+								</div>
+							</li>
+							<li class="on-scroll fade-up">
+								<div class="advantage-block">
+									<h5>Văn hoá Danh Dự</h5>
+									<p>Chúng tôi mong muốn giúp tất cả mọi người tiếp xúc với Kid's Garden cảm thấy được
+										quan trọng, được trân trọng và được hiểu biết.</p>
+								</div>
+							</li>
+							<li class="on-scroll fade-up">
+								<div class="advantage-block">
+									<h5>Định Hướng</h5>
+									<p>Giúp quá trình phụ huynh và bé ổn định cuộc sống khi được chăm sóc tại Kid's
+										Garden trở nên dễ dàng hơn nhiều.</p>
+								</div>
+							</li>
+							<li class="on-scroll fade-up">
+								<div class="advantage-block">
+									<h5>Chất lượng giáo dục</h5>
+									<p>Đội ngũ giáo viên đáng tin cậy, được đào tạo bài bản và được tuyển chọn kỹ lưỡng.
+										Chúng tôi tin rằng các giáo viên tại trường đóng vai trò rất lớn trong việc chăm
+										sóc trẻ chất lượng.</p>
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End advantage listing -->
+		<!-- Begin foods -->
+		<section
+			class="food-section wave-block reverce-wave bg-cover pb-xs-90 pb-md-120 pb-lg-150 pt-xs-70 pt-md-110 pt-lg-170 mb-xs-50 mb-md-75 mb-lg-120 lazy"
+			data-src="img/gray_wave-1.svg">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 on-scroll fade-left">
+						<div class="block-header">
+							<p class="mb-xs-15 mb-lg-8">Trẻ em cần thực phẩm lành mạnh, bổ dưỡng</p>
+							<h2 class="mb-xs-25 mb-md-25"><span>Thực phẩm</span> chất lượng <span>tốt</span> đảm bảo cho
+								sự phát triển tốt nhất của trẻ.</h2>
+						</div>
+						<p class="mb-xs-20 mb-md-45">Bằng cách ăn theo kiểu gia đình và tự phục vụ, trẻ em học cách đưa
+							ra những lựa chọn lành mạnh và mối liên hệ giữa thực phẩm và cộng đồng.</p>
+						<div class="icons-list bm-0">
+							<div class="icon square-icon">
+								<img src="img/fruits.png" alt="alt">
+								<p>Trái cây</p>
+							</div>
+							<div class="icon square-icon">
+								<img src="img/vegetables.png" alt="alt">
+								<p>Rau củ</p>
+							</div>
+							<div class="icon square-icon">
+								<img src="img/grains.png" alt="alt">
+								<p>Hạt ngũ cốc</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 on-scroll fade-up">
+						<div class="svg-block">
+							<svg viewBox="0 0 526 502" fill="none" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
+								<mask id="img1-food" maskUnits="userSpaceOnUse" x="0" y="0" width="526" height="502">
+									<path
+										d="M51 8.49999C125.8 -21.9 276.833 39.8333 343 74.5C288.5 32.5 323 18.5 347 20.5C371 22.5 432.5 44.5 467.5 68C495.5 86.8 491.167 99.8333 485.5 104C489.333 108.333 499.7 121.5 510.5 139.5C524 162 532.5 183.5 517 210C504.6 231.2 446.833 231.833 421 229.5C419.667 229.5 422.4 233.9 444 251.5C471 273.5 495.5 299.5 493.5 330.5C491.9 355.3 436.833 363.833 409.5 365C410.5 368.5 409.8 376.9 399 382.5C388.2 388.1 355.833 387.5 341 386.5C364.167 399 410.3 428.9 409.5 448.5C408.5 473 386.5 492 344 488C301.5 484 238 444.5 250 452.5C262 460.5 280 481.5 271.5 492C263 502.5 236 504.5 216.5 496C197 487.5 81.5 440.5 67.5 397.5C53.5 354.5 83.5 367 81.5 359.5C79.5 352 53 346.5 25.5 293C3.50001 250.2 34.5 226.5 58 224.5C54.8333 224.5 40.3 217.8 23.5 191C6.7 164.2 25.8333 142.5 37.5 135C35.5 133.167 30.6 128.6 27 125C22.5 120.5 -42.5 46.5 51 8.49999Z"
+										fill="#C4C4C4" />
+								</mask>
+								<g mask="url(#img1-food)">
+									<rect y="-13" width="750" height="523" fill="url(#pattern-food-children)" />
+								</g>
+								<defs>
+									<pattern id="pattern-food-children" patternContentUnits="objectBoundingBox"
+										width="1" height="1">
+										<use xlink:href="#for-img1-food" transform="scale(0.00133333 0.00191205)" />
+									</pattern>
+									<image id="for-img1-food" width="750" height="523"
+										xlink:href="img/children-food.jpg"></image>
+								</defs>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End foods -->
+		<!-- Begin centre-information -->
+		<section class="centre-information-section mb-xs-50 mb-sm-60 mb-md-70 mb-lg-120">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-header mb-xs-30 mb-md-31 on-scroll">
+							<p class="h-sub">Phu huynh muốn biết thêm về trường?</p>
+							<h2>Thông tin trung tâm về Kid's Garden</h2>
+						</div>
+						<div class="my-paroller" data-paroller-factor="0.3" data-paroller-type="foreground"
+							data-paroller-direction="vertical">
+							<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="img">
+						</div>
+						<div class="centre-tabs on-scroll fade-up" data-tab-group>
+							<div class="centre-tabs-controls">
+								<ul class="centre-tab-list" data-tab-head>
+									<li><a href="#" id="centreTab1" class="active">Triết Lý</a></li>
+									<li><a href="#" id="centreTab2">Giá Trị</a></li>
+									<li><a href="#" id="centreTab3">Giáo Viên</a></li>
+									<li><a href="#" id="centreTab4">Phản Hồi Từ Phụ Huynh</a></li>
 								</ul>
-								<div class="close-nav">
-									<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M 10,10 L 30,30 M 30,10 L 10,30" fill="#3B4757"/>
-									</svg>
+							</div>
+							<div class="centre-tabs-wrap" data-tab-content>
+								<div class="centre-tab-content tab-content">
+									<p class="tab-head">Chúng tôi tin rằng trẻ em học bằng cách xây dựng kiến ​​thức mà
+										chúng đã có - chủ yếu được thể hiện thông qua trò chơi. Giáo viên giúp trẻ em
+										học bằng cách tạo ra một môi trường phong phú để khám phá thông qua các hoạt
+										động giáo dục thú vị.</p>
+									<ol class="order-list-2 adventage-slider" data-show-count='3' data-show-count-md='2'
+										data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
+										<li>
+											<div class="list-description">
+												<h5 class="mb-15">Khám Phá Giới Quan</h5>
+												<p>Giáo viên có thể định hình và xây dựng dựa trên kiến ​​thức đó bằng
+													cách khám phá những gì trẻ đã biết thông qua quan sát, trò chuyện
+													riêng, làm rõ và mời trẻ khám phá thế giới xung quanh..</p>
+											</div>
+										</li>
+										<li>
+											<div class="list-description">
+												<h5 class="mb-15">Kỷ Luật Tích Cực</h5>
+												<p>Không bao giờ được sử dụng đòn roi hoặc các hình phạt thể xác khác
+													như một phương tiện để kỷ luật học sinh. Chính sách không đánh đòn
+													này mở rộng cho các bậc phụ huynh có con em mình trong khi ở trường
+													hoặc các sự kiện do trường tài trợ.</p>
+											</div>
+										</li>
+										<li>
+											<div class="list-description">
+												<h5 class="mb-15">Môi Trường</h5>
+												<p>Tại Kid's Garden làm việc và vui chơi trong môi trường hấp dẫn vì vậy
+													môi trường tại đây luôn sạch sẽ, tương đối gọn gàng và đẹp mắt. Môi
+													trường ngoài trời rộng rãi, có những khu vườn đầy màu sắc và thú vị,
+													cùng nhiều hoạt động khác nhau.</p>
+											</div>
+										</li>
+									</ol>
 								</div>
-							</nav>
-							<div class="header-controls">
-								<div class="header-search">
-									<i class="fas fa-search"></i>
-									<form action="#" class="search-form">
-										<input type="search" class="search" name="search" placeholder="Search...">
-										<button type="submit"><i class="fas fa-search"></i></button>
-									</form>
+								<div class="centre-tab-content tab-content">
+									<div class="tab-values">
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="tab-values__img">
+													<img src="img/lazy.png" class="lazy" data-src="img/values.jpg"
+														alt="img">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="tab-values__description">
+													<p>Môi trường tích cực, an toàn – Kid's Garden cam kết cung cấp một
+														bầu không khí tích cực và nâng cao tinh thần cho trẻ em và nhân
+														viên của chúng tôi; một trải nghiệm học tập thú vị trong một môi
+														trường an toàn, bảo mật và yêu thương.</p>
+													<ul>
+														<li>
+															<p><strong>Khả năng Lãnh Đạo</strong> – Kid's Garden cam kết
+																phát triển, cố vấn và trao quyền cho trẻ em và giáo viên
+																để phát huy được tiềm năng đầy đủ của họ.</p>
+														</li>
+														<li>
+															<p><strong>Sự xuất sắc</strong> – Kid's Garden cam kết đạt
+																được mức độ xuất sắc cao nhất trong việc chăm sóc trẻ
+																em, trong giáo dục và trong mọi việc nhà trường làm; có
+																tính chuyên nghiệp cao, sáng tạo, hiệu quả và hiệu suất
+																cao.</p>
+														</li>
+														<li>
+															<p><strong>Sự tôn trọng</strong> – Kid's Garden cam kết xây
+																dựng mối quan hệ bền chặt, lành mạnh với nhau, với con
+																em chúng ta và gia đình các em, cùng với cộng đồng thông
+																qua giao tiếp và hiểu biết về các nền văn hóa xung quanh
+																chúng ta.</p>
+														</li>
+														<li>
+															<p><strong>Chính trực</strong> – Kid's Garden cam kết thực
+																hiện sứ mệnh của mình.</p>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="hamburger">
-									<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1.02857 2.31427H22.9714C23.5371 2.31427 24 1.85141 24 1.2857C24 0.719983 23.5371 0.257126 22.9714 0.257126H1.02857C0.462857 0.257126 0 0.719983 0 1.2857C0 1.85141 0.462857 2.31427 1.02857 2.31427Z" fill="#3B4757"/>
-										<path d="M1.02857 10.0285H22.9714C23.5371 10.0285 24 9.56567 24 8.99996C24 8.43425 23.5371 7.97139 22.9714 7.97139H1.02857C0.462857 7.97139 0 8.43425 0 8.99996C0 9.56567 0.462857 10.0285 1.02857 10.0285Z" fill="#3B4757"/>
-										<path d="M1.02857 17.7428H22.9714C23.5371 17.7428 24 17.28 24 16.7143C24 16.1485 23.5371 15.6857 22.9714 15.6857H1.02857C0.462857 15.6857 0 16.1485 0 16.7143C0 17.28 0.462857 17.7428 1.02857 17.7428Z" fill="#3B4757"/>
-									</svg>
+								<div class="centre-tab-content tab-content">
+									<p class="tab-head">Kid's Garden tập trung vào việc tuyển dụng và giữ chân giáo viên
+										chất lượng và cung cấp mức lương cạnh tranh, kỷ luật học sinh tốt và quy mô lớp
+										học tương đối nhỏ</p>
+									<div class="teacher-slider" data-show-count='3' data-show-count-md='2'
+										data-show-count-sm='1' data-show-count-mob='1' data-slick-speed="5000"
+										data-slick-autoplay="true">
+										<div class="teacher-slide">
+											<div class="teacher-card">
+												<div class="teacher-card__info">
+													<div class="teacher-card_text">
+														<h5>Ngọc Lan</h5>
+														<p class="main-color-font">Infant Classroom</p>
+														<p>Cô ấy chưa bao giờ chán những khoảnh khắc "à ha" và niềm tự
+															hào dâng trào trong một đứa trẻ đang học cách làm điều gì đó
+															lần đầu tiên.</p>
+													</div>
+													<ul class="soc-link soc-link__bg">
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/facebook.svg' title='Facebook'
+																	alt="facebook">
+															</a></li>
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/twitter.svg' title='Twitter'
+																	alt="twitter">
+															</a></li>
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/instagram.svg' title='Instagram'
+																	alt="nstagram">
+															</a></li>
+													</ul>
+												</div>
+												<picture>
+													<source type="image/webp" srcset="img/teacher1.webp">
+													<source type="image/jpeg" srcset="img/teacher1.jpg">
+													<img src="img/img/teacher1.jpg"
+														class="teacher-card__avatar extra__avatar" alt="avatar">
+												</picture>
+											</div>
+										</div>
+										<div class="teacher-slide">
+											<div class="teacher-card">
+												<div class="teacher-card__info">
+													<div class="teacher-card_text">
+														<h5>Ngọc Cẩm</h5>
+														<p class="main-color-font">Infant Classroom</p>
+														<p>Cô ấy chưa bao giờ chán những khoảnh khắc "à ha" và niềm tự
+															hào dâng trào trong một đứa trẻ đang học cách làm điều gì đó
+															lần đầu tiên.</p>
+													</div>
+													<ul class="soc-link soc-link__bg">
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/facebook.svg' title='Facebook'
+																	alt="facebook">
+															</a></li>
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/twitter.svg' title='Twitter'
+																	alt="twitter">
+															</a></li>
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/instagram.svg' title='Instagram'
+																	alt="nstagram">
+															</a></li>
+													</ul>
+												</div>
+												<picture>
+													<source type="image/webp" srcset="img/teacher2.webp">
+													<source type="image/jpeg" srcset="img/teacher2.jpg">
+													<img src="img/img/teacher2.jpg" class="teacher-card__avatar"
+														alt="avatar">
+												</picture>
+											</div>
+										</div>
+										<div class="teacher-slide">
+											<div class="teacher-card">
+												<div class="teacher-card__info">
+													<div class="teacher-card_text">
+														<h5>Anh Thư</h5>
+														<p class="main-color-font">Toddler Classroom</p>
+														<p>Luôn luôn vui vẻ, tươi cười và sát cánh cùng con lớn lên.</p>
+													</div>
+													<ul class="soc-link soc-link__bg">
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/facebook.svg' title='Facebook'
+																	alt="facebook">
+															</a></li>
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/twitter.svg' title='Twitter'
+																	alt="twitter">
+															</a></li>
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/instagram.svg' title='Instagram'
+																	alt="nstagram">
+															</a></li>
+													</ul>
+												</div>
+												<picture>
+													<source type="image/webp" srcset="img/teacher3.webp">
+													<source type="image/jpeg" srcset="img/teacher3.jpg">
+													<img src="img/img/teacher3.jpg"
+														class="teacher-card__avatar extra__avatar02" alt="avatar">
+												</picture>
+											</div>
+										</div>
+										<div class="teacher-slide">
+											<div class="teacher-card">
+												<div class="teacher-card__info">
+													<div class="teacher-card_text">
+														<h5>Thu Thảo</h5>
+														<p class="main-color-font">Giáo viên chủ nhiệm</p>
+														<p>Thu Thảo có bằng sư phạm Mầm non, chứng chỉ Montessori dành
+															cho trẻ em từ 3-6 tuổi.</p>
+													</div>
+													<ul class="soc-link soc-link__bg">
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/facebook.svg' title='Facebook'
+																	alt="facebook">
+															</a></li>
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/twitter.svg' title='Twitter'
+																	alt="twitter">
+															</a></li>
+														<li><a href="#">
+																<img src="img/lazy.png" class="lazy"
+																	data-src='img/instagram.svg' title='Instagram'
+																	alt="instagram">
+															</a></li>
+													</ul>
+												</div>
+												<picture>
+													<source type="image/webp" srcset="img/teacher4.webp">
+													<source type="image/jpeg" srcset="img/teacher4.jpg">
+													<img src="img/img/teacher4.jpg" class="teacher-card__avatar"
+														alt="avatar">
+												</picture>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="centre-tab-content tab-content">
+									<p class="tab-head">Nếu bạn có phản hồi hoặc lời khen ngợi muốn chia sẻ, vui lòng
+										gửi đánh giá của bạn ở cuối trang này.</p>
+									<div class="testimonial-wrap">
+										<ul class="testimonial-list testimonial-slider justify-content-center"
+											data-show-count='3' data-show-count-md='2' data-show-count-mob='1'
+											data-slick-speed="5000" data-slick-autoplay="true">
+											<li>
+												<div class="testimonial-block">
+													<div class="testimonial-img">
+														<img src="img/lazy.png" class="lazy"
+															data-src=img/testimonials1.svg alt="img">
+													</div>
+													<div class="testimonial-description">
+														<h5>Anni</h5>
+														<time datetime="2019-03-19">31 Jul 2019</time>
+														<p>“Đây là một năm tuyệt vời đối với tất cả các bé trai của
+															chúng tôi tại Kid's Garden Montesstori Kindergarten và các
+															bé đã có thật nhiều niềm vui! Các bé trai rất yêu trường của
+															mình...</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="testimonial-block">
+													<div class="testimonial-img">
+														<img src="img/lazy.png" class="lazy"
+															data-src=img/testimonials2.svg alt="img">
+													</div>
+													<div class="testimonial-description">
+														<h5>Tin</h5>
+														<time datetime="2019-03-19">19 March 2010</time>
+														<p>“Trong chương trình nghệ thuật tại Kids Garden Montessori,
+															con trai tôi rất thích thú và hào hứng. Cháu về nhà và dạy
+															gia đình chúng tôi các nghệ sĩ...</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="testimonial-block">
+													<div class="testimonial-img">
+														<img src="img/lazy.png" class="lazy"
+															data-src=img/testimonials3.svg alt="img">
+													</div>
+													<div class="testimonial-description">
+														<h5>Jenny</h5>
+														<time datetime="2019-03-19">19 May 2022</time>
+														<p>“Cảm ơn Kid's Garden với những giáo viên tuyệt vời cho con
+															chúng tôi. Chúng tôi rất may mắn khi có thể gửi...</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="d-flex justify-content-center pt-50 w-100">
+										<a href="testimonials.html" class="read-more">view more <svg
+												xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+												viewBox="0 0 9 9" fill="none">
+												<path
+													d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z" />
+											</svg></a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="top-img">
-				<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="cloud">
+		</section>
+		<!-- End centre-information -->
+		<!-- Begin gallery section -->
+		<section
+			class="wave-block wave-gallery reverce-wave pb-xs-90 pb-md-130 pb-lg-150 pt-xs-75 pt-md-115 pt-lg-150 bg-cover mb-xs-55 mb-md-75 mb-lg-120 lazy"
+			data-src="img/wave-pink.svg">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-header on-scroll">
+							<p class="h-sub">Kiểm tra nguồn cấp dữ liệu Instagram của chúng tôi</p>
+							<h2><span class="main-color-font">#Kid's Garden</span> Thư viện ảnh</h2>
+						</div>
+						<div class="gallery-prewiev-wrap on-scroll fade-up">
+							<div class="gallery-item">
+								<a href="img/gallery-1-x2.jpg" data-gallery="example-gallery">
+									<picture>
+										<source type="image/webp" srcset="img/gallery-1-1.webp">
+										<source type="image/jpeg" srcset="img/gallery-1-1.jpg">
+										<img src="img/gallery-1-1.jpg" alt="img">
+									</picture>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gallery-2-x2.jpg" data-gallery="example-gallery">
+									<picture>
+										<source type="image/webp" srcset="img/gallery-2.webp">
+										<source type="image/jpeg" srcset="img/gallery-2.jpg">
+										<img src="img/gallery-2.jpg" alt="img">
+									</picture>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gallery-3-x2.jpg" data-gallery="example-gallery">
+									<picture>
+										<source type="image/webp" srcset="img/gallery-3.webp">
+										<source type="image/jpeg" srcset="img/gallery-3.jpg">
+										<img src="img/gallery-3.jpg" alt="img">
+									</picture>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gallery-4-x2.jpg" data-gallery="example-gallery">
+									<picture>
+										<source type="image/webp" srcset="img/gallery-4.webp">
+										<source type="image/jpeg" srcset="img/gallery-4.jpg">
+										<img src="img/gallery-4.jpg" alt="img">
+									</picture>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gallery-5-x2.jpg" data-gallery="example-gallery">
+									<picture>
+										<source type="image/webp" srcset="img/gallery-5.webp">
+										<source type="image/jpeg" srcset="img/gallery-5.jpg">
+										<img src="img/gallery-5.jpg" alt="img">
+									</picture>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gallery-6-x2.jpg" data-gallery="example-gallery">
+									<picture>
+										<source type="image/webp" srcset="img/gallery-6.webp">
+										<source type="image/jpeg" srcset="img/gallery-6.jpg">
+										<img src="img/gallery-6.jpg" alt="img">
+									</picture>
+								</a>
+							</div>
+							<div class="gallery-item mini-gallery">
+								<div class="inner-gallery">
+									<div class="mini-gallery__item">
+										<div class="inner-wrap">
+											<a href="img/gallery-7-x2.jpg" data-gallery="example-gallery">
+												<picture>
+													<source type="image/webp" srcset="img/gallery-7.webp">
+													<source type="image/jpeg" srcset="img/gallery-7.jpg">
+													<img src="img/gallery-7.jpg" alt="img">
+												</picture>
+											</a>
+										</div>
+									</div>
+									<div class="mini-gallery__item">
+										<div class="inner-wrap">
+											<a href="img/gallery-8-x2.jpg" data-gallery="example-gallery">
+												<picture>
+													<source type="image/webp" srcset="img/gallery-8.webp">
+													<source type="image/jpeg" srcset="img/gallery-8.jpg">
+													<img src="img/gallery-8.jpg" alt="img">
+												</picture>
+											</a>
+										</div>
+									</div>
+									<div class="mini-gallery__item">
+										<div class="inner-wrap">
+											<a href="img/gallery-9-x2.jpg" data-gallery="example-gallery">
+												<picture>
+													<source type="image/webp" srcset="img/gallery-9.webp">
+													<source type="image/jpeg" srcset="img/gallery-9.jpg">
+													<img src="img/gallery-9.jpg" alt="img">
+												</picture>
+											</a>
+										</div>
+									</div>
+									<div class="mini-gallery__item">
+										<div class="inner-wrap">
+											<a href="img/gallery-10-x2.jpg" data-gallery="example-gallery">
+												<picture>
+													<source type="image/webp" srcset="img/gallery-10.webp">
+													<source type="image/jpeg" srcset="img/gallery-10.jpg">
+													<img src="img/gallery-10.jpg" alt="img">
+												</picture>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gallery-11-x2.jpg" data-gallery="example-gallery">
+									<picture>
+										<source type="image/webp" srcset="img/gallery-11.webp">
+										<source type="image/jpeg" srcset="img/gallery-11.jpg">
+										<img src="img/gallery-11.jpg" alt="img">
+									</picture>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<!-- <div class="bottom-img">
-				<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="cloud">
-			</div> -->
-		</header>
-		<!-- End header -->
-		<main class="main-container">
-			<!-- Begin main slier -->
-			<div class="main-slider-wrap white-dots">
-				<div class="main-slider" data-slick-speed="4000" data-slick-autoplay="true">
-					<div class="sl-card">
-						<div class="container">
-							<div class="row">
-								<div class="col-12">
-									<div class="slide-content lazy" data-src="img/main-slider-rect.svg">
-										<img src="img/lazy.png" class="lazy" data-src="img/slider-ico.svg" alt="img">
-										<p class="content-text-cursive">Bạn đang tìm một ngôi trường</p>
-										<p class="content-head"><span>Vì</span><br>hạnh phúc của con?</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<picture>
-							<source type="image/webp" srcset="img/main-slider-1.webp">
-							<source type="image/jpeg" srcset="img/main-slider-1.jpg">
-							<img src="img/main-slider-1.jpg" class="slider-bg" alt="img">
-						</picture>
-					</div>
-					<div class="sl-card">
-						<div class="container">
-							<div class="row">
-								<div class="col-12">
-									<div class="slide-content lazy" data-src="img/main-slider-rect.svg">
-										<img src="img/lazy.png" class="lazy" data-src="img/slider-ico-2.svg" alt="img">
-										<p class="content-text-cursive">Nơi niềm vui sẽ đến!</p>
-										<p class="content-head"><span>Giáo dục từ tâm!</span><br>Kid's Garden!</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<picture>
-							<source type="image/webp" srcset="img/main-slider-2.webp">
-							<source type="image/jpeg" srcset="img/main-slider-2.jpg">
-							<img src="img/main-slider-2.jpg" class="slider-bg" alt="img">
-						</picture>
-					</div>
-				</div>
-			</div>
-			<!-- End main slier -->
-			<!-- Begin text-block -->
-			<section class="text-block pb-xs-30 pb-sm-50 pb-md-60 on-scroll">
-				<div class="container">
-					<div class="row align-items-sm-center align-items-lg-center">
-						<div class="col-md-6 on-scroll fade-left fade-scale">
-							<div class="svg-block">
-								<svg viewBox="0 0 526 502" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-									<mask id="img1" maskUnits="userSpaceOnUse" x="0" y="0" width="526" height="502">
-										<path d="M51 8.49999C125.8 -21.9 276.833 39.8333 343 74.5C288.5 32.5 323 18.5 347 20.5C371 22.5 432.5 44.5 467.5 68C495.5 86.8 491.167 99.8333 485.5 104C489.333 108.333 499.7 121.5 510.5 139.5C524 162 532.5 183.5 517 210C504.6 231.2 446.833 231.833 421 229.5C419.667 229.5 422.4 233.9 444 251.5C471 273.5 495.5 299.5 493.5 330.5C491.9 355.3 436.833 363.833 409.5 365C410.5 368.5 409.8 376.9 399 382.5C388.2 388.1 355.833 387.5 341 386.5C364.167 399 410.3 428.9 409.5 448.5C408.5 473 386.5 492 344 488C301.5 484 238 444.5 250 452.5C262 460.5 280 481.5 271.5 492C263 502.5 236 504.5 216.5 496C197 487.5 81.5 440.5 67.5 397.5C53.5 354.5 83.5 367 81.5 359.5C79.5 352 53 346.5 25.5 293C3.50001 250.2 34.5 226.5 58 224.5C54.8333 224.5 40.3 217.8 23.5 191C6.7 164.2 25.8333 142.5 37.5 135C35.5 133.167 30.6 128.6 27 125C22.5 120.5 -42.5 46.5 51 8.49999Z" fill="#C4C4C4"/>
-									</mask>
-									<g mask="url(#img1)">
-										<rect y="-13" width="750" height="523" fill="url(#pattern0)"/>
-									</g>
-									<defs>
-										<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-											<use xlink:href="#for-img1" transform="scale(0.00133333 0.00191205)"/>
-										</pattern>
-										<image id="for-img1" width="750" height="523" xlink:href="img/svg-block-1.jpg"></image>
-									</defs>
-								</svg>
-							</div>
-						</div>
-						<div class="col-md-6 on-scroll fade-up fade-scale pt-xs-35 pt-md-0">
-							<div class="block-header mb-xs-25 mb-md-25">
-								<p class="mb-xs-15 mb-lg-8">Nơi học tập và vui chơi cùng nhau</p>
-								<h2 class="mb-xs-25 mb-md-25"><span>Ngôi trường</span> dành cho giáo dục mầm non</h2>
-							</div>
-							<p class="mb-xs-20 mb-md-30">Chúng tôi cung cấp một môi trường sáng tạo, nuôi dưỡng và kích thích, nơi trẻ em phát triển tính độc lập, sự tự tin và ý thức tích cực về bản thân và thế giới xung quanh. Chương trình giảng dạy của chúng tôi được thiết kế để trẻ em tham gia vào các trải nghiệm nâng cao ngôn ngữ, khả năng đọc viết, âm nhạc, chuyển động, nghệ thuật và xã hội hóa. Thông qua trò chơi, tất cả các lĩnh vực phát triển đều được thúc đẩy.</p>
-							<a href="about-us.html" class="read-more">đọc thêm... <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Begin text-block -->
-			<!-- Begin education-slier -->
-			<section class="wave-block mb-xs-65 mb-md-60 mb-lg-120 pb-xs-130 pb-md-120 pb-lg-150 pt-xs-90 pt-md-120 pt-lg-180 lazy" data-src="img/blue-wave.png">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="section-header on-scroll">
-								<p class="h-sub">Chúng tôi tận tâm chăm sóc và giáo dục</p>
-								<h2>Giáo dục tại Kid's Garden</h2>
-								<p>Chương trình giảng dạy độc quyền trường, kết hợp với công cụ lập kế hoạch bài học kỹ thuật số, cho phép giáo viên tạo ra những trải nghiệm học tập được cá nhân hóa, phù hợp với mọi lứa tuổi.</p>
-							</div>
-							<div class="education-slier on-scroll fade-up" data-show-count='3' data-show-count-md='2' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
-								<div class="it-card">
-									<div class="education-short">
-										<div class="education-top">
-											<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
-											<picture>
-												<source type="image/webp" srcset="img/educational-1.webp">
-												<source type="image/jpeg" srcset="img/educational-1.jpg">
-												<img src="img/educational-1.jpg" alt="img">
-											</picture>
-											<div class="hide-block">
-												<div class="inner-wrap">
-													<p>Trong những năm đầu đời, trẻ sơ sinh phát triển ý thức cơ bản về bản thân và người khác, hình thành sự gắn bó và học cách nói những từ đầu tiên - thời điểm quan trọng nhất cho sự phát triển.</p>
-													<div class="education-short-info">
-														<p><span>Sĩ số:</span> 10 - 15</p>
-														<p><span>Giáo viên:</span> 2 - 3</p>
-													</div>
-													<a href="programs.html" class="read-more">Đăng ký ghi danh <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">< <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"></path></svg>path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"></path></svg></a>
-												</div>
-											</div>
-										</div>
-										<div class="education-bottom">
-											<p>Infants <span class="education-age">12-24</span> <span class="old">Tháng</span></p>
-										</div>
-										<!-- educational-1 -->
-									</div>
-								</div>
-								<div class="it-card">
-									<div class="education-short color-2">
-										<div class="education-top">
-											<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
-											<picture>
-												<source type="image/webp" srcset="img/educational-2.webp">
-												<source type="image/jpeg" srcset="img/educational-2.jpg">
-												<img src="img/educational-2.jpg" alt="img">
-											</picture>
-											<div class="hide-block">
-												<div class="inner-wrap">
-													<p>Năng lượng. Sự phấn khích. Vận động. Đây là những phẩm chất xác định một đứa trẻ mới biết đi và chúng được sử dụng trong chương trình này để thúc đẩy những trải nghiệm học tập tích cực.</p>
-													<div class="education-short-info">
-														<p><span>Sĩ số:</span> 10 - 15</p>
-														<p><span>Giáo viên:</span> 2 - 3</p>
-													</div>
-													<a href="programs.html" class="read-more">Đăng ký ghi danh <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"></path></svg></a>
-												</div>
-											</div>
-										</div>
-										<div class="education-bottom">
-											<p>Toddlers <span class="education-age">2-3</span> <span class="old">Tuổi</span></p>
-										</div>
-										<!-- educational-1 -->
-									</div>
-								</div>
-								<div class="it-card">
-									<div class="education-short color-3">
-										<div class="education-top">
-											<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
-											<picture>
-												<source type="image/webp" srcset="img/educational-3.webp">
-												<source type="image/jpeg" srcset="img/educational-3.jpg">
-												<img src="img/educational-3.jpg" alt="img">
-											</picture>
-											<div class="hide-block">
-												<div class="inner-wrap">
-													<p>Học sinh sẽ nhận được nền giáo dục truyền thống về khoa học, kỹ thuật, nghệ thuật và toán học và sẽ được theo dõi về mặt học thuật và xã hội thông qua các đánh giá liên tục.</p>
-													<div class="education-short-info">
-														<p><span>Sĩ số:</span> 10 - 15</p>
-														<p><span>Giáo viên:</span> 2 - 3</p>
-													</div>
-													<a href="programs.html" class="read-more">Đăng ký ghi danh <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"></path></svg></a>
-												</div>
-											</div>
-										</div>
-										<div class="education-bottom">
-											<p>Preschool <span class="education-age">3-4</span> <span class="old">Tuổi</span></p>
-										</div>
-										<!-- educational-1 -->
-									</div>
-								</div>
-								<div class="it-card">
-									<div class="education-short color-4">
-										<div class="education-top">
-											<!-- <img src="img/lazy.png" class="lazy" data-src="img/educational-1.jpg" alt="img"> -->
-											<picture>
-												<source type="image/webp" srcset="img/educational-4.webp">
-												<source type="image/jpeg" srcset="img/educational-4.jpg">
-												<img src="img/educational-4.jpg" alt="img">
-											</picture>
-											<div class="hide-block">
-												<div class="inner-wrap">
-													<p>Chương trình này chuẩn bị cho con bạn những bài học về việc hình thành và duy trì thái độ tích cực đối với việc học tập độc lập, cũng như thành thạo các kỹ năng vận động thô và tinh.</p>
-													<div class="education-short-info">
-														<p><span>Sĩ số:</span> 10 - 15</p>
-														<p><span>Giáo viên:</span> 2 - 3</p>
-													</div>
-													<a href="programs.html" class="read-more">Đăng ký ghi danh <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"></path></svg></a>
-												</div>
-											</div>
-										</div>
-										<div class="education-bottom">
-											<p>Pre-Kindergarten <span class="education-age">4-5</span> <span class="old">Tuổi</span></p>
-										</div>
-										<!-- educational-1 -->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End education-slier -->
-			<!-- Begin learning element -->
-			<section class="mb-xs-45 mb-md-90 mb-lg-120 learning-elements-section">
-				<div class="container">
-					<div class="row align-items-lg-center">
-						<div class="col-lg-6 on-scroll fade-left">
-							<div class="block-header">
-								<p class="mb-xs-15 mb-lg-8">Chúng tôi cung cấp các hoạt động chính</p>
-								<h2 class="mb-xs-25 mb-md-25"><span>Các yếu tố của việc học</span>. Cam kết đạt được sự xuất sắc</h2>
-							</div>
-							<p class="mb-xs-15 mb-lg-8">Chương trình giảng dạy của chúng tôi dựa trên nghiên cứu và thiết kế của các chuyên gia giáo dục nổi tiếng nhất và được tạo ra để hỗ trợ những năm đầu quan trọng này, truyền cảm hứng cho trẻ em trở thành những nhà thám hiểm táo bạo ngày nay và những người học vui vẻ, tự tin trong suốt cuộc đời.</p>
-							<p class="mb-xs-20 mb-md-37">Chúng tôi tin rằng trẻ em học tốt nhất thông qua trò chơi và được truyền cảm hứng từ việc học tập dựa trên trẻ em. Chúng tôi có một số khu vực chơi khác nhau trong mỗi nhóm của chúng tôi.</p>
-							<a href="#" class="read-more">Đọc thêm... <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></a>
-						</div>
-						<div class="col-lg-6 on-scroll fade-up">
-							<div class="el-wr">
-								<div class="learning-elements-wrap">
-									<div class="circle-container">
-										<div class="learning-item" data-learn-tab='#0'>
-											<img src="img/gardering.svg" alt="img">
-											<p>Làm Vườn</p>
-										</div>
-										<div class="learning-item" data-learn-tab='#1'>
-											<img src="img/sport.svg" alt="img">
-											<p>Thể Thao</p>
-										</div>
-										<div class="learning-item" data-learn-tab='#2'>
-											<img src="img/art.svg" alt="img">
-											<p>Nghệ Thuật</p>
-										</div>
-										<div class="learning-item" data-learn-tab='#3'>
-											<img src="img/excursions.svg" alt="img">
-											<p>Dã ngoại</p>
-										</div>
-										<div class="learning-item" data-learn-tab='#4'>
-											<img src="img/outdoor.svg" alt="img">
-											<p>Hoạt động ngoài trời</p>
-										</div>
-										<div class="learning-item" data-learn-tab='#5'>
-											<img src="img/math.svg" alt="img">
-											<p>Toán Học</p>
-										</div>
-										<div class="learning-item" data-learn-tab='#6'>
-											<img src="img/literacy.svg" alt="img">
-											<p>Chữ Viết</p>
-										</div>
-									</div>
-									<div class="tab-element-content">
-										<div class="for-tab start">
-											<h3>Chương trình giảng dạy<br>Các yếu tố học thuật</h3>
-										</div>
-										<div class="for-tab" id="0">
-											<h3>Làm Vườn</h3>
-											<p class="mb-0">Nhóm trẻ mới biết đi và mẫu giáo có một khu vườn ngoài trời. Mỗi mùa xuân, trẻ em và giáo viên đóng góp và tạo ra những khu vườn container/giường nâng đẹp và mang tính giáo dục.</p>
-										</div>
-										<div class="for-tab" id="1">
-											<h3>Thể Thao</h3>
-											<p class="mb-0">Trẻ em cần phát triển các kỹ năng vận động lớn và vận động nhỏ cũng như sức bền tim mạch. Hoạt động thể chất mở rộng cũng là cần thiết để giải quyết vấn đề béo phì đang gia tăng ở trẻ em Việt Nam.</p>
-										</div>
-										<div class="for-tab" id="2">
-											<h3>Nghệ Thuật</h3>
-											<p class="mb-0">Trẻ em sẽ thích thiết kế và tạo ra những con rối và tranh ghép, chế tạo nhạc cụ và bó hoa, cũng như vẽ, dán và làm đồ thủ công theo ý thích của mình!</p>
-										</div>
-										<div class="for-tab" id="3">
-											<h3>Dã Ngoại</h3>
-											<p class="mb-0">Các chuyến tham quan là một phần thiết yếu trong quá trình giáo dục sớm của trẻ. Chúng giúp trẻ tiếp xúc với nhiều trải nghiệm khác nhau và giúp trẻ hiểu được thế giới mà mình đang sống.</p>
-										</div>
-										<div class="for-tab" id="4">
-											<h3>Hoạt động ngoài trời</h3>
-											<p class="mb-0">Con em chúng ta được hưởng lợi từ nhiều không gian vui chơi ngoài trời. Ngoài sân chơi, trẻ còn được trải nghiệm những điều kỳ diệu của thiên nhiên trong rừng, cánh đồng lớn, khu vườn nâng cao và những chuyến đi dạo trong thiên nhiên.</p>
-										</div>
-										<div class="for-tab" id="5">
-											<h3>Toán Học</h3>
-											<p class="mb-0">Nên dạy chương trình toán mẫu giáo bằng các bài học mẫu giáo bao gồm các hoạt động tương tác, trò chơi học tập, phiếu bài tập có thể in, đánh giá và củng cố.</p>
-										</div>
-										<div class="for-tab" id="6">
-											<h3>Chữ Viết</h3>
-											<p class="mb-0">Một chương trình học đọc viết có hệ thống và tích hợp thúc đẩy sự phát triển ngôn ngữ của trẻ mẫu giáo. Chương trình sử dụng phương pháp hướng dẫn trực tiếp, có hệ thống dựa trên một loạt sách được biên soạn hàng tuần trong lớp học.</p>
-										</div>
-									</div>
-									<div class="my-paroller" data-paroller-factor="0.3" data-paroller-type="foreground" data-paroller-direction="vertical">
-										<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="img">
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End learning element -->
-			<section class="video-section mb-xs-50 mb-md-75 mb-lg-120 lazy" data-src="img/wave-video.png">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-sm-8 col-lg-6 on-scroll fade-up">
-							<h2 class="mb-xs-25 mb-md-25">Chúng tôi cung cấp môi trường phát triển <span class="main-color-font dib"> cho trẻ</span></h2>
-							<p class="mb-xs-20 mb-md-37">Suy nghĩ mở dựa trên những trải nghiệm vui chơi, trẻ em phát triển và yêu thích trường học của mình, tự hào khi được thuộc về một cộng đồng</p>
-							<a href="https://www.youtube.com/watch?v=NkfKechADow" class="video-btn" data-toggle="lightbox"><span class="play-ico animate"><span><img src="img/lazy.png" class="lazy" data-src='img/play.png' alt="img"></span></span> view video</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Begin advantage listing -->
-			<section class="mb-xs-60 mb-sm-70 mb-md-90 mb-lg-120">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<div class="section-header on-scroll">
-								<p class="h-sub">Đọc tiếp để hiểu sự khác biệt của chúng tôi</p>
-								<h2>Tại sao chọn Kid's Garden</h2>
-							</div>
-							<ol class="advantage-list pt-xs-0 pt-md-0 pt-lg-20">
-								<li class="on-scroll fade-up">
-									<div class="advantage-block">
-										<h5>Môi trường như ở Nhà</h5>
-										<p>Các con sẽ cảm thấy thoải mái và tự tin trong ngôi nhà của mình, cảm thấy an toàn và an tâm để khám phá và học hỏi.</p>
-									</div>
-								</li>
-								<li class="on-scroll fade-up">
-									<div class="advantage-block">
-										<h5>Sự yêu thương</h5>
-										<p>Đón nhận sự yêu thương vô bờ bến từ các cô giáo có chuyên môn cao.</p>
-									</div>
-								</li>
-								<li class="on-scroll fade-up">
-									<div class="advantage-block">
-										<h5>Đảm bảo hoàn tiền trong 30 ngày</h5>
-										<p>Nếu ba mẹ không hoàn toàn hài lòng, chúng tôi sẽ hoàn lại tiền cho bạn mà không cần hỏi lý do.</p>
-									</div>
-								</li>
-								<li class="on-scroll fade-up">
-									<div class="advantage-block">
-										<h5>Văn hoá Danh Dự</h5>
-										<p>Chúng tôi mong muốn giúp tất cả mọi người tiếp xúc với Kid's Garden cảm thấy được quan trọng, được trân trọng và được hiểu biết.</p>
-									</div>
-								</li>
-								<li class="on-scroll fade-up">
-									<div class="advantage-block">
-										<h5>Định Hướng</h5>
-										<p>Giúp quá trình phụ huynh và bé ổn định cuộc sống khi được chăm sóc tại Kid's Garden trở nên dễ dàng hơn nhiều.</p>
-									</div>
-								</li>
-								<li class="on-scroll fade-up">
-									<div class="advantage-block">
-										<h5>Chất lượng giáo dục</h5>
-										<p>Đội ngũ giáo viên đáng tin cậy, được đào tạo bài bản và được tuyển chọn kỹ lưỡng. Chúng tôi tin rằng các giáo viên tại trường đóng vai trò rất lớn trong việc chăm sóc trẻ chất lượng.</p>
-									</div>
-								</li>
-							</ol>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End advantage listing -->
-			<!-- Begin foods -->
-			<section class="food-section wave-block reverce-wave bg-cover pb-xs-90 pb-md-120 pb-lg-150 pt-xs-70 pt-md-110 pt-lg-170 mb-xs-50 mb-md-75 mb-lg-120 lazy" data-src="img/gray_wave-1.svg">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-md-6 on-scroll fade-left">
-							<div class="block-header">
-								<p class="mb-xs-15 mb-lg-8">Trẻ em cần thực phẩm lành mạnh, bổ dưỡng</p>
-								<h2 class="mb-xs-25 mb-md-25"><span>Thực phẩm</span> chất lượng <span>tốt</span> đảm bảo cho sự phát triển tốt nhất của trẻ.</h2>
-							</div>
-							<p class="mb-xs-20 mb-md-45">Bằng cách ăn theo kiểu gia đình và tự phục vụ, trẻ em học cách đưa ra những lựa chọn lành mạnh và mối liên hệ giữa thực phẩm và cộng đồng.</p>
-							<div class="icons-list bm-0">
-								<div class="icon square-icon">
-									<img src="img/fruits.png" alt="alt">
-									<p>Trái cây</p>
-								</div>
-								<div class="icon square-icon">
-									<img src="img/vegetables.png" alt="alt">
-									<p>Rau củ</p>
-								</div>
-								<div class="icon square-icon">
-									<img src="img/grains.png" alt="alt">
-									<p>Hạt ngũ cốc</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 on-scroll fade-up">
-							<div class="svg-block">
-								<svg viewBox="0 0 526 502" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-									<mask id="img1-food" maskUnits="userSpaceOnUse" x="0" y="0" width="526" height="502">
-										<path d="M51 8.49999C125.8 -21.9 276.833 39.8333 343 74.5C288.5 32.5 323 18.5 347 20.5C371 22.5 432.5 44.5 467.5 68C495.5 86.8 491.167 99.8333 485.5 104C489.333 108.333 499.7 121.5 510.5 139.5C524 162 532.5 183.5 517 210C504.6 231.2 446.833 231.833 421 229.5C419.667 229.5 422.4 233.9 444 251.5C471 273.5 495.5 299.5 493.5 330.5C491.9 355.3 436.833 363.833 409.5 365C410.5 368.5 409.8 376.9 399 382.5C388.2 388.1 355.833 387.5 341 386.5C364.167 399 410.3 428.9 409.5 448.5C408.5 473 386.5 492 344 488C301.5 484 238 444.5 250 452.5C262 460.5 280 481.5 271.5 492C263 502.5 236 504.5 216.5 496C197 487.5 81.5 440.5 67.5 397.5C53.5 354.5 83.5 367 81.5 359.5C79.5 352 53 346.5 25.5 293C3.50001 250.2 34.5 226.5 58 224.5C54.8333 224.5 40.3 217.8 23.5 191C6.7 164.2 25.8333 142.5 37.5 135C35.5 133.167 30.6 128.6 27 125C22.5 120.5 -42.5 46.5 51 8.49999Z" fill="#C4C4C4"/>
-									</mask>
-									<g mask="url(#img1-food)">
-										<rect y="-13" width="750" height="523" fill="url(#pattern-food-children)"/>
-									</g>
-									<defs>
-										<pattern id="pattern-food-children" patternContentUnits="objectBoundingBox" width="1" height="1">
-											<use xlink:href="#for-img1-food" transform="scale(0.00133333 0.00191205)"/>
-										</pattern>
-										<image id="for-img1-food" width="750" height="523" xlink:href="img/children-food.jpg"></image>
-									</defs>
-								</svg>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End foods -->
-			<!-- Begin centre-information -->
-			<section class="centre-information-section mb-xs-50 mb-sm-60 mb-md-70 mb-lg-120">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<div class="section-header mb-xs-30 mb-md-31 on-scroll">
-								<p class="h-sub">Phu huynh muốn biết thêm về trường?</p>
-								<h2>Thông tin trung tâm về Kid's Garden</h2>
-							</div>
-							<div class="my-paroller" data-paroller-factor="0.3" data-paroller-type="foreground" data-paroller-direction="vertical">
-								<img src="img/lazy.png" class="lazy" data-src="img/cloud.png" alt="img">
-							</div>
-							<div class="centre-tabs on-scroll fade-up" data-tab-group>
-								<div class="centre-tabs-controls">
-									<ul class="centre-tab-list" data-tab-head>
-										<li><a href="#" id="centreTab1" class="active">Triết Lý</a></li>
-										<li><a href="#" id="centreTab2">Giá Trị</a></li>
-										<li><a href="#" id="centreTab3">Giáo Viên</a></li>
-										<li><a href="#" id="centreTab4">Phản Hồi Từ Phụ Huynh</a></li>
-									</ul>
-								</div>
-								<div class="centre-tabs-wrap" data-tab-content>
-									<div class="centre-tab-content tab-content">
-										<p class="tab-head">Chúng tôi tin rằng trẻ em học bằng cách xây dựng kiến ​​thức mà chúng đã có - chủ yếu được thể hiện thông qua trò chơi. Giáo viên giúp trẻ em học bằng cách tạo ra một môi trường phong phú để khám phá thông qua các hoạt động giáo dục thú vị.</p>
-										<ol class="order-list-2 adventage-slider" data-show-count='3' data-show-count-md='2' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
-											<li>
-												<div class="list-description">
-													<h5 class="mb-15">Khám Phá Giới Quan</h5>
-													<p>Giáo viên có thể định hình và xây dựng dựa trên kiến ​​thức đó bằng cách khám phá những gì trẻ đã biết thông qua quan sát, trò chuyện riêng, làm rõ và mời trẻ khám phá thế giới xung quanh..</p>
-												</div>
-											</li>
-											<li>
-												<div class="list-description">
-													<h5 class="mb-15">Kỷ Luật Tích Cực</h5>
-													<p>Không bao giờ được sử dụng đòn roi hoặc các hình phạt thể xác khác như một phương tiện để kỷ luật học sinh. Chính sách không đánh đòn này mở rộng cho các bậc phụ huynh có con em mình trong khi ở trường hoặc các sự kiện do trường tài trợ.</p>
-												</div>
-											</li>
-											<li>
-												<div class="list-description">
-													<h5 class="mb-15">Môi Trường</h5>
-													<p>Tại Kid's Garden làm việc và vui chơi trong môi trường hấp dẫn vì vậy môi trường tại đây luôn sạch sẽ, tương đối gọn gàng và đẹp mắt. Môi trường ngoài trời rộng rãi, có những khu vườn đầy màu sắc và thú vị, cùng nhiều hoạt động khác nhau.</p>
-												</div>
-											</li>
-										</ol>
-									</div>
-									<div class="centre-tab-content tab-content">
-										<div class="tab-values">
-											<div class="row">
-												<div class="col-lg-6">
-													<div class="tab-values__img">
-														<img src="img/lazy.png" class="lazy" data-src="img/values.jpg" alt="img">
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="tab-values__description">
-														<p>Môi trường tích cực, an toàn – Kid's Garden cam kết cung cấp một bầu không khí tích cực và nâng cao tinh thần cho trẻ em và nhân viên của chúng tôi; một trải nghiệm học tập thú vị trong một môi trường an toàn, bảo mật và yêu thương.</p>
-														<ul>
-															<li>
-																<p><strong>Khả năng Lãnh Đạo</strong> – Kid's Garden cam kết phát triển, cố vấn và trao quyền cho trẻ em và giáo viên để phát huy được tiềm năng đầy đủ của họ.</p>
-															</li>
-															<li>
-																<p><strong>Sự xuất sắc</strong> – Kid's Garden cam kết đạt được mức độ xuất sắc cao nhất trong việc chăm sóc trẻ em, trong giáo dục và trong mọi việc nhà trường làm; có tính chuyên nghiệp cao, sáng tạo, hiệu quả và hiệu suất cao.</p>
-															</li>
-															<li>
-																<p><strong>Sự tôn trọng</strong> – Kid's Garden cam kết xây dựng mối quan hệ bền chặt, lành mạnh với nhau, với con em chúng ta và gia đình các em, cùng với cộng đồng thông qua giao tiếp và hiểu biết về các nền văn hóa xung quanh chúng ta.</p>
-															</li>
-															<li>
-																<p><strong>Chính trực</strong> – Kid's Garden cam kết thực hiện sứ mệnh của mình.</p>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="centre-tab-content tab-content">
-										<p class="tab-head">Kid's Garden tập trung vào việc tuyển dụng và giữ chân giáo viên chất lượng và cung cấp mức lương cạnh tranh, kỷ luật học sinh tốt và quy mô lớp học tương đối nhỏ</p>
-										<div class="teacher-slider" data-show-count='3' data-show-count-md='2' data-show-count-sm='1' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
-											<div class="teacher-slide">
-												<div class="teacher-card">
-													<div class="teacher-card__info">
-														<div class="teacher-card_text">
-															<h5>Ngọc Lan</h5>
-															<p class="main-color-font">Infant Classroom</p>
-															<p>Cô ấy chưa bao giờ chán những khoảnh khắc "à ha" và niềm tự hào dâng trào trong một đứa trẻ đang học cách làm điều gì đó lần đầu tiên.</p>
-														</div>
-														<ul class="soc-link soc-link__bg">
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
-															</a></li>
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
-															</a></li>
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
-															</a></li>
-														</ul>
-													</div>
-													<picture>
-														<source type="image/webp" srcset="img/teacher1.webp">
-														<source type="image/jpeg" srcset="img/teacher1.jpg">
-														<img src="img/img/teacher1.jpg" class="teacher-card__avatar extra__avatar" alt="avatar">
-													</picture>
-												</div>
-											</div>
-											<div class="teacher-slide">
-												<div class="teacher-card">
-													<div class="teacher-card__info">
-														<div class="teacher-card_text">
-															<h5>Ngọc Cẩm</h5>
-															<p class="main-color-font">Infant Classroom</p>
-															<p>Cô ấy chưa bao giờ chán những khoảnh khắc "à ha" và niềm tự hào dâng trào trong một đứa trẻ đang học cách làm điều gì đó lần đầu tiên.</p>
-														</div>
-														<ul class="soc-link soc-link__bg">
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
-															</a></li>
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
-															</a></li>
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
-															</a></li>
-														</ul>
-													</div>
-													<picture>
-														<source type="image/webp" srcset="img/teacher2.webp">
-														<source type="image/jpeg" srcset="img/teacher2.jpg">
-														<img src="img/img/teacher2.jpg" class="teacher-card__avatar" alt="avatar">
-													</picture>
-												</div>
-											</div>
-											<div class="teacher-slide">
-												<div class="teacher-card">
-													<div class="teacher-card__info">
-														<div class="teacher-card_text">
-															<h5>Anh Thư</h5>
-															<p class="main-color-font">Toddler Classroom</p>
-															<p>Luôn luôn vui vẻ, tươi cười và sát cánh cùng con lớn lên.</p>
-														</div>
-														<ul class="soc-link soc-link__bg">
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
-															</a></li>
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
-															</a></li>
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
-															</a></li>
-														</ul>
-													</div>
-													<picture>
-														<source type="image/webp" srcset="img/teacher3.webp">
-														<source type="image/jpeg" srcset="img/teacher3.jpg">
-														<img src="img/img/teacher3.jpg" class="teacher-card__avatar extra__avatar02" alt="avatar">
-													</picture>
-												</div>
-											</div>
-											<div class="teacher-slide">
-												<div class="teacher-card">
-													<div class="teacher-card__info">
-														<div class="teacher-card_text">
-															<h5>Thu Thảo</h5>
-															<p class="main-color-font">Giáo viên chủ nhiệm</p>
-															<p>Thu Thảo có bằng sư phạm Mầm non, chứng chỉ Montessori dành cho trẻ em từ 3-6 tuổi.</p>
-														</div>
-														<ul class="soc-link soc-link__bg">
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
-															</a></li>
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
-															</a></li>
-															<li><a href="#">
-																<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="instagram">
-															</a></li>
-														</ul>
-													</div>
-													<picture>
-														<source type="image/webp" srcset="img/teacher4.webp">
-														<source type="image/jpeg" srcset="img/teacher4.jpg">
-														<img src="img/img/teacher4.jpg" class="teacher-card__avatar" alt="avatar">
-													</picture>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="centre-tab-content tab-content">
-										<p class="tab-head">Nếu bạn có phản hồi hoặc lời khen ngợi muốn chia sẻ, vui lòng gửi đánh giá của bạn ở cuối trang này.</p>
-										<div class="testimonial-wrap">
-											<ul class="testimonial-list testimonial-slider justify-content-center" data-show-count='3' data-show-count-md='2' data-show-count-mob='1' data-slick-speed="5000" data-slick-autoplay="true">
-												<li>
-													<div class="testimonial-block">
-														<div class="testimonial-img">
-															<img src="img/lazy.png" class="lazy" data-src=img/testimonials1.svg alt="img">
-														</div>
-														<div class="testimonial-description">
-															<h5>Anni</h5>
-															<time datetime="2019-03-19">31 Jul 2019</time>
-															<p>“Đây là một năm tuyệt vời đối với tất cả các bé trai của chúng tôi tại Kid's Garden Montesstori Kindergarten và các bé đã có thật nhiều niềm vui! Các bé trai rất yêu trường của mình...</p>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="testimonial-block">
-														<div class="testimonial-img">
-															<img src="img/lazy.png" class="lazy" data-src=img/testimonials2.svg alt="img">
-														</div>
-														<div class="testimonial-description">
-															<h5>Tin</h5>
-															<time datetime="2019-03-19">19 March 2010</time>
-															<p>“Trong chương trình nghệ thuật tại Kids Garden Montessori, con trai tôi rất thích thú và hào hứng. Cháu về nhà và dạy gia đình chúng tôi các nghệ sĩ...</p>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="testimonial-block">
-														<div class="testimonial-img">
-															<img src="img/lazy.png" class="lazy" data-src=img/testimonials3.svg alt="img">
-														</div>
-														<div class="testimonial-description">
-															<h5>Jenny</h5>
-															<time datetime="2019-03-19">19 May 2022</time>
-															<p>“Cảm ơn Kid's Garden với những giáo viên tuyệt vời cho con chúng tôi. Chúng tôi rất may mắn khi có thể gửi...</p>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<div class="d-flex justify-content-center pt-50 w-100">
-											<a href="testimonials.html" class="read-more">view more <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End centre-information -->
-			<!-- Begin gallery section -->
-			<section class="wave-block wave-gallery reverce-wave pb-xs-90 pb-md-130 pb-lg-150 pt-xs-75 pt-md-115 pt-lg-150 bg-cover mb-xs-55 mb-md-75 mb-lg-120 lazy" data-src="img/wave-pink.svg">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<div class="section-header on-scroll">
-								<p class="h-sub">Kiểm tra nguồn cấp dữ liệu Instagram của chúng tôi</p>
-								<h2><span class="main-color-font">#Kid's Garden</span> Thư viện ảnh</h2>
-							</div>
-							<div class="gallery-prewiev-wrap on-scroll fade-up">
-								<div class="gallery-item">
-									<a href="img/gallery-1-x2.jpg" data-gallery="example-gallery">
-										<picture>
-											<source type="image/webp" srcset="img/gallery-1-1.webp">
-											<source type="image/jpeg" srcset="img/gallery-1-1.jpg">
-											<img src="img/gallery-1-1.jpg" alt="img">
-										</picture>
-									</a>
-								</div>
-								<div class="gallery-item">
-									<a href="img/gallery-2-x2.jpg" data-gallery="example-gallery">
-										<picture>
-											<source type="image/webp" srcset="img/gallery-2.webp">
-											<source type="image/jpeg" srcset="img/gallery-2.jpg">
-											<img src="img/gallery-2.jpg" alt="img">
-										</picture>
-									</a>
-								</div>
-								<div class="gallery-item">
-									<a href="img/gallery-3-x2.jpg" data-gallery="example-gallery">
-										<picture>
-											<source type="image/webp" srcset="img/gallery-3.webp">
-											<source type="image/jpeg" srcset="img/gallery-3.jpg">
-											<img src="img/gallery-3.jpg" alt="img">
-										</picture>
-									</a>
-								</div>
-								<div class="gallery-item">
-									<a href="img/gallery-4-x2.jpg" data-gallery="example-gallery">
-										<picture>
-											<source type="image/webp" srcset="img/gallery-4.webp">
-											<source type="image/jpeg" srcset="img/gallery-4.jpg">
-											<img src="img/gallery-4.jpg" alt="img">
-										</picture>
-									</a>
-								</div>
-								<div class="gallery-item">
-									<a href="img/gallery-5-x2.jpg" data-gallery="example-gallery">
-										<picture>
-											<source type="image/webp" srcset="img/gallery-5.webp">
-											<source type="image/jpeg" srcset="img/gallery-5.jpg">
-											<img src="img/gallery-5.jpg" alt="img">
-										</picture>
-									</a>
-								</div>
-								<div class="gallery-item">
-									<a href="img/gallery-6-x2.jpg" data-gallery="example-gallery">
-										<picture>
-											<source type="image/webp" srcset="img/gallery-6.webp">
-											<source type="image/jpeg" srcset="img/gallery-6.jpg">
-											<img src="img/gallery-6.jpg" alt="img">
-										</picture>
-									</a>
-								</div>
-								<div class="gallery-item mini-gallery">
-									<div class="inner-gallery">
-										<div class="mini-gallery__item">
-											<div class="inner-wrap">
-												<a href="img/gallery-7-x2.jpg" data-gallery="example-gallery">
-													<picture>
-														<source type="image/webp" srcset="img/gallery-7.webp">
-														<source type="image/jpeg" srcset="img/gallery-7.jpg">
-														<img src="img/gallery-7.jpg" alt="img">
-													</picture>
-												</a>
-											</div>
-										</div>
-										<div class="mini-gallery__item">
-											<div class="inner-wrap">
-												<a href="img/gallery-8-x2.jpg" data-gallery="example-gallery">
-													<picture>
-														<source type="image/webp" srcset="img/gallery-8.webp">
-														<source type="image/jpeg" srcset="img/gallery-8.jpg">
-														<img src="img/gallery-8.jpg" alt="img">
-													</picture>
-												</a>
-											</div>
-										</div>
-										<div class="mini-gallery__item">
-											<div class="inner-wrap">
-												<a href="img/gallery-9-x2.jpg" data-gallery="example-gallery">
-													<picture>
-														<source type="image/webp" srcset="img/gallery-9.webp">
-														<source type="image/jpeg" srcset="img/gallery-9.jpg">
-														<img src="img/gallery-9.jpg" alt="img">
-													</picture>
-												</a>
-											</div>
-										</div>
-										<div class="mini-gallery__item">
-											<div class="inner-wrap">
-												<a href="img/gallery-10-x2.jpg" data-gallery="example-gallery">
-													<picture>
-														<source type="image/webp" srcset="img/gallery-10.webp">
-														<source type="image/jpeg" srcset="img/gallery-10.jpg">
-														<img src="img/gallery-10.jpg" alt="img">
-													</picture>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="gallery-item">
-									<a href="img/gallery-11-x2.jpg" data-gallery="example-gallery">
-										<picture>
-											<source type="image/webp" srcset="img/gallery-11.webp">
-											<source type="image/jpeg" srcset="img/gallery-11.jpg">
-											<img src="img/gallery-11.jpg" alt="img">
-										</picture>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End gallery section -->
-			<!-- Begin latest news -->
-			<!-- <section class="mb-xs-50 mb-md-80 mb-lg-120">
+		</section>
+		<!-- End gallery section -->
+		<!-- Begin latest news -->
+		<!-- <section class="mb-xs-50 mb-md-80 mb-lg-120">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
@@ -1076,89 +1300,108 @@
 					</div>
 				</div>
 			</section> -->
-			<!-- End latest news -->
-		</main>
+		<!-- End latest news -->
+	</main>
 
-		<footer>
-			<div class="footer-top lazy" data-src="img/footer-bg.svg">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 col-lg-4">
-							<div class="f-subscribe">
-								<a href="index.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
-								<p>Đội ngũ giàu kinh nghiệm của Kid's Garden nỗ lực mang đến một môi trường sáng tạo và hấp dẫn cùng cơ hội để trẻ em học tập, phát triển và thành công.</p>
-								<form action="#" class="signup-form" id="newsletterForm">
-									<input type="text" name="email" class="signup" placeholder="Đăng ký nhận bản tin">
-									<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z"/></svg></button>
-								</form>
-							</div>
+	<footer>
+		<div class="footer-top lazy" data-src="img/footer-bg.svg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-lg-4">
+						<div class="f-subscribe">
+							<a href="index.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
+							<p>Đội ngũ giàu kinh nghiệm của Kid's Garden nỗ lực mang đến một môi trường sáng tạo và hấp
+								dẫn cùng cơ hội để trẻ em học tập, phát triển và thành công.</p>
+							<form action="#" class="signup-form" id="newsletterForm">
+								<input type="text" name="email" class="signup" placeholder="Đăng ký nhận bản tin">
+								<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+										viewBox="0 0 9 9" fill="none">
+										<path
+											d="M0.505883 5.20577L0.491834 5.2027L6.51423 5.2027L4.62101 7.10009C4.5283 7.19272 4.47745 7.31821 4.47745 7.44992C4.47745 7.58162 4.5283 7.70623 4.62101 7.79909L4.91559 8.09382C5.00823 8.18645 5.13166 8.23767 5.2633 8.23767C5.39501 8.23767 5.51852 8.18682 5.61115 8.09418L8.85649 4.84913C8.94949 4.75613 9.00035 4.63226 8.99998 4.50048C9.00035 4.36796 8.94949 4.24401 8.85649 4.15116L5.61115 0.905818C5.51852 0.813257 5.39508 0.76233 5.2633 0.76233C5.13166 0.76233 5.00823 0.813331 4.91559 0.905818L4.62101 1.20055C4.5283 1.29304 4.47745 1.41655 4.47745 1.54826C4.47745 1.67989 4.5283 1.79689 4.62101 1.88945L6.53559 3.79745L0.499152 3.79745C0.227908 3.79745 -1.94412e-05 4.03123 -1.94175e-05 4.30233L-1.93811e-05 4.71918C-1.93574e-05 4.99028 0.23464 5.20577 0.505883 5.20577Z" />
+									</svg></button>
+							</form>
 						</div>
-						<div class="col-md-6 col-lg-4">
-							<div class="f-nav">
-								<h4>Quick Links</h4>
-								<nav>
-									<ul class="flex-style">
-										<li><a href="about-us.html">Giới Thiệu</a></li>
-										<li><a href="prices.html">Học Phí</a></li>
-										<li><a href="gallery-boxed.html">Thư Viện Ảnh</a></li>
-										<li><a href="events.html">Sự Kiện</a></li>
-										<li><a href="faq.html">FAQs</a></li>
-										<li><a href="contacts.html">Liên Hệ</a></li>
-									</ul>
-								</nav>
-							</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="f-nav">
+							<h4>Quick Links</h4>
+							<nav>
+								<ul class="flex-style">
+									<li><a href="about-us.html">Giới Thiệu</a></li>
+									<li><a href="prices.html">Học Phí</a></li>
+									<li><a href="gallery-boxed.html">Thư Viện Ảnh</a></li>
+									<li><a href="events.html">Sự Kiện</a></li>
+									<li><a href="faq.html">FAQs</a></li>
+									<li><a href="contacts.html">Liên Hệ</a></li>
+								</ul>
+							</nav>
 						</div>
-						<div class="col-md-6 col-lg-4">
-							<div class="f-contact">
-								<h4>Liên Hệ</h4>
-								<div class="contact-list">
-									<a href="#" target="_blank"><img src="img/lazy.png" class="lazy" data-src='img/map-marker-small.svg' alt="marker"> Cơ sở 1: Số 401/31-33 Nguyễn Duy Trinh, P. Bình Trưng Tây, TP Thủ Đức, TP HCM</a>
-									<a href="#" target="_blank"><img src="img/lazy.png" class="lazy" data-src='img/map-marker-small.svg' alt="marker"> Cơ sở 2: Số 194-196 Song hành cao tốc LT DG, KĐT Lakeview city, P. An Phú, TP Thủ Đức, TP HCM</a>
-									<a href="tel:+84962395330"><img src="img/lazy.png" class="lazy" data-src='img/call.svg' alt="call"> +84962395330</a>
-									<a href="mailto:officeone@youremail.com"><img src="img/lazy.png" class="lazy" data-src='img/envelope.svg' alt="img">kidsgarden.q2@gmail.com</a>
-									<p><img src="img/lazy.png" class="lazy" data-src='img/clock.svg' alt="img">Thứ hai - Thứ sáu: 6:30 am – 5:00 pm</p>
-								</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="f-contact">
+							<h4>Liên Hệ</h4>
+							<div class="contact-list">
+								<a href="#" target="_blank"><img src="img/lazy.png" class="lazy"
+										data-src='img/map-marker-small.svg' alt="marker"> Cơ sở 1: Số 401/31-33 Nguyễn
+									Duy Trinh, P. Bình Trưng Tây, TP Thủ Đức, TP HCM</a>
+								<a href="#" target="_blank"><img src="img/lazy.png" class="lazy"
+										data-src='img/map-marker-small.svg' alt="marker"> Cơ sở 2: Số 194-196 Song hành
+									cao tốc LT DG, KĐT Lakeview city, P. An Phú, TP Thủ Đức, TP HCM</a>
+								<a href="tel:+84962395330"><img src="img/lazy.png" class="lazy" data-src='img/call.svg'
+										alt="call"> +84962395330</a>
+								<a href="mailto:officeone@youremail.com"><img src="img/lazy.png" class="lazy"
+										data-src='img/envelope.svg' alt="img">kidsgarden.q2@gmail.com</a>
+								<p><img src="img/lazy.png" class="lazy" data-src='img/clock.svg' alt="img">Thứ hai - Thứ
+									sáu: 6:30 am – 5:00 pm</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="footer-bottom-wrap">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="footer-bottom">
-								<p>&copy; 2019 <a href="#">Kid's Garden.</a> All Rights Reserved. <a href="#">Privacy Policy</a></p>
-								<div class="soc-link-wrap">
-									<p>Follow us:</p>
-									<ul class="soc-link">
-										<li><a href="#">
-											<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg' title='Facebook' alt="facebook">
-										</a></li>
-										<li><a href="#">
-											<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg' title='Twitter' alt="twitter">
-										</a></li>
-										<li><a href="#">
-											<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg' title='Instagram' alt="nstagram">
-										</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<div class="up-btn">
-			<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M13 6.36563C13 6.77035 12.8528 7.17536 12.5568 7.4918C11.9438 8.1459 10.924 8.172 10.2791 7.55029L6.48873 3.89339L2.72462 7.54655C2.08197 8.17055 1.06219 8.14763 0.446938 7.49525C-0.168314 6.84259 -0.145429 5.80813 0.497507 5.18413L5.37122 0.453213C5.99268 -0.149866 6.9715 -0.151024 7.59494 0.449475L12.4992 5.1801C12.8316 5.50199 13 5.93281 13 6.36563Z"/>
-			</svg>
 		</div>
-		<!-- ===> Juery 3.2.1 JS <==== -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="vendor/vendor-bundle.js"></script>
-		<script src="js/common.js"></script>
-		<script src="form/forms.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuHS2And3EtzpWBoMSqCIIiJzAEynp5ms&callback=initMap" async defer></script>
-	</body>
+		<div class="footer-bottom-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer-bottom">
+							<p>&copy; 2024 <a href="#">Kid's Garden.</a> All Rights Reserved. <a href="#">Privacy
+									Policy</a></p>
+							<div class="soc-link-wrap">
+								<p>Follow us:</p>
+								<ul class="soc-link">
+									<li><a href="https://www.facebook.com/kidsgarden.q2">
+											<img src="img/lazy.png" class="lazy" data-src='img/facebook.svg'
+												title='Facebook' alt="facebook">
+										</a></li>
+									<li><a href="#">
+											<img src="img/lazy.png" class="lazy" data-src='img/twitter.svg'
+												title='Twitter' alt="twitter">
+										</a></li>
+									<li><a href="https://www.instagram.com/kidsgarden.q2/">
+											<img src="img/lazy.png" class="lazy" data-src='img/instagram.svg'
+												title='Instagram' alt="nstagram">
+										</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="up-btn">
+		<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M13 6.36563C13 6.77035 12.8528 7.17536 12.5568 7.4918C11.9438 8.1459 10.924 8.172 10.2791 7.55029L6.48873 3.89339L2.72462 7.54655C2.08197 8.17055 1.06219 8.14763 0.446938 7.49525C-0.168314 6.84259 -0.145429 5.80813 0.497507 5.18413L5.37122 0.453213C5.99268 -0.149866 6.9715 -0.151024 7.59494 0.449475L12.4992 5.1801C12.8316 5.50199 13 5.93281 13 6.36563Z" />
+		</svg>
+	</div>
+	<!-- ===> Juery 3.2.1 JS <==== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="vendor/vendor-bundle.js"></script>
+	<script src="js/common.js"></script>
+	<script src="form/forms.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuHS2And3EtzpWBoMSqCIIiJzAEynp5ms&callback=initMap"
+		async defer></script>
+</body>
+
 </html>
